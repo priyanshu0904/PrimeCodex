@@ -22,8 +22,7 @@ then got output in console/terminal
 cat Main.java is used to see the content inside Main.
 ```
 
-![[Compiling_and_Running.jpg]]
-
+![alt text](Compiling_and_Running.jpg)
 ---
 ## Boilerplate Code
 ```
@@ -39,7 +38,7 @@ public class Main{
 ---
 ## Anatomy
 
-![[Anatomy.png]]
+![alt text](Anatomy.png)
 
 - The first letter of class must be Capital, it is a good practice. The class name must be same as file name.
 - Only one public class in a file.
@@ -75,7 +74,7 @@ public class Main{
 - Ensures Java's **write-once-run-anywhere** capability.
 - Platform dependent, different JVMs required for each type of OS.
 
-![[JDK vs JRE vs JVM.jpg]]
+![alt text](<JDK vs JRE vs JVM.jpg>)
 
 ---
 ## Showing Output
