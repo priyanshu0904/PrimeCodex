@@ -12,9 +12,9 @@ float marks = 88.5f; //Initialization
 ---
 ## Data Types
 
-![[Data Type Table.jpg]]
+![alt text](<Data Type Table.jpg>)
 
-![[Data Types Chart.jpg]]
+![alt text](<Data Types Chart.jpg>)
 
 - 1 bit - can store either 0/1. 1 byte = 8 bit.
 
