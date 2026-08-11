@@ -1,0 +1,34 @@
+public class MergeSortedArray {
+    public static void main(String[] args) {
+        System.out.println("Welcome to Merge Two Sorted Arrays....");
+        System.out.println("Enter first sorted array: ");
+        int[] arr1 = ArrayUtility.inputArray();
+        System.out.println("Enter second sorted array: ");
+        int[] arr2 = ArrayUtility.inputArray();
+
+        int[] mergedArr = mergeArray(arr1, arr2);
+        System.out.println("The merged array is: ");
+        ArrayUtility.displayArray(mergedArr);
+    }
+
+    public static int[] mergeArray(int[] arr1, int[] arr2){
+        int newSize = arr1.length + arr2.length;
+        int[] newArr = new int[newSize];
+        int i = 0, j = 0, k = 0;
+        //Needs to be revisited
+        while(i < arr1.length || j < arr2.length) {
+            if((j == arr2.length) || (i < arr1.length && arr1[i] < arr2[j])){
+                newArr[k] = arr1[i];
+                i++;
+                k++;
+            }
+            else{
+                newArr[k] = arr2[j];
+                j++;
+                k++;
+            }
+        }
+
+        return newArr;
+    }
+}
