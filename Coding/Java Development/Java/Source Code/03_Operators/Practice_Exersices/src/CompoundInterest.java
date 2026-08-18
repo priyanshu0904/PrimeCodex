@@ -12,7 +12,7 @@ public class CompoundInterest {
         System.out.print("Tell me how many years you are borrowing this money: ");
         float years = sc.nextFloat();
 
-        //Math.pow(double, double) and returns double
+        //Math.pow(double a, double b) -> a^b and returns double
         //If you pass float or int values, it automatically converts to double, implicit type conversion
         double comp_int = principle * Math.pow((1 + rate / 100), years);
         System.out.println("Your intrest is Rs." + (comp_int - principle));

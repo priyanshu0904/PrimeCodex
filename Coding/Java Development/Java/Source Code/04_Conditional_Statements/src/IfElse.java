@@ -2,6 +2,11 @@ public class IfElse {
     public static void main(String[] args) {
         //If else is also called as branching or control statements
 
+        int a = 9;
+        if(a == 9){
+            System.out.println("Hello 9......");
+        }
+
         boolean isMale = true;
         String name = "Priyanshu";
 

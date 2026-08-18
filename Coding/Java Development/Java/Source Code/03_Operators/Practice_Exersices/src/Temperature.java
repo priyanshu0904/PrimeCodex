@@ -10,7 +10,5 @@ public class Temperature {
 
         double cels = (fahr - 32) * 5.0/9.0; //to be safe, no integer division
         System.out.println("The temperature in celsius is: " + cels);
-
-
     }
 }

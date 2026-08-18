@@ -1,6 +1,6 @@
 public class Variables {
     public static void main(String[] args) {
-        //data_type variable_name = value;
+        //data_type variable_name = value / literals;
         //stored in memory cells (RAM) - memory address and a name mapped to that address - in the format of 0 and 1
 
         int a; // declaration

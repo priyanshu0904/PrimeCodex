@@ -23,7 +23,7 @@ public class DataTypes {
         float myFloat = 5.0f; //f indicates the float
         System.out.println(myFloat); 
 
-        float yourFloat = 5; //type conversion
+        float yourFloat = 5; //type conversion int to float
         System.out.println(yourFloat);
 
         //double literal

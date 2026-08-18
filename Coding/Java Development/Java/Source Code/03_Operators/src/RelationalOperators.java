@@ -17,12 +17,13 @@ public class RelationalOperators {
         int num1 = 55;
         int num2 = 55;
 
-        //working of all relational operators
-        System.out.println(num1 == num2);
-        System.out.println(num1 != num2);
-        System.out.println(num1 > num2);
-        System.out.println(num1 >= num2);
-        System.out.println(num1 < num2);
-        System.out.println(num1 <= num2);
+        //working of all relational operators or comparison operators
+        //result in boolean
+        System.out.println(num1 == num2); //Equality
+        System.out.println(num1 != num2); //Inequality
+        System.out.println(num1 > num2); //Greater than
+        System.out.println(num1 >= num2); //Greater than or equal to
+        System.out.println(num1 < num2); //Less than
+        System.out.println(num1 <= num2); //Less than or equal to
     }
 }

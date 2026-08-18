@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/00_Introduction/00_Introduction.iml" filepath="$PROJECT_DIR$/00_Introduction/00_Introduction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01_Java_Basics/01_Java_Basics.iml" filepath="$PROJECT_DIR$/01_Java_Basics/01_Java_Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_DataType_Variables/02_DataType_Variables.iml" filepath="$PROJECT_DIR$/02_DataType_Variables/02_DataType_Variables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Operators/03_Operators.iml" filepath="$PROJECT_DIR$/03_Operators/03_Operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_Conditional_Statements/04_Conditional_Statements.iml" filepath="$PROJECT_DIR$/04_Conditional_Statements/04_Conditional_Statements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_Functions_Methods/05_Functions_Methods.iml" filepath="$PROJECT_DIR$/05_Functions_Methods/05_Functions_Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_Arrays/06_Arrays.iml" filepath="$PROJECT_DIR$/06_Arrays/06_Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_Classes_And_Objects/07_Classes_And_Objects.iml" filepath="$PROJECT_DIR$/07_Classes_And_Objects/07_Classes_And_Objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_Arrays/Practice_Exersices/Practice_Exersices.iml" filepath="$PROJECT_DIR$/06_Arrays/Practice_Exersices/Practice_Exersices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_Classes_And_Objects/Practice_Exersices/Practice_Exersices2.iml" filepath="$PROJECT_DIR$/07_Classes_And_Objects/Practice_Exersices/Practice_Exersices2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01_Java_Basics/Practice_Exersices/Practice_Exersices3.iml" filepath="$PROJECT_DIR$/01_Java_Basics/Practice_Exersices/Practice_Exersices3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Operators/Practice_Exersices/Practice_Exersices4.iml" filepath="$PROJECT_DIR$/03_Operators/Practice_Exersices/Practice_Exersices4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_Functions_Methods/Practice_Exersices/Practice_Exersices5.iml" filepath="$PROJECT_DIR$/05_Functions_Methods/Practice_Exersices/Practice_Exersices5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_Conditional_Statements/Practice_Exersices/Practice_Exersices6.iml" filepath="$PROJECT_DIR$/04_Conditional_Statements/Practice_Exersices/Practice_Exersices6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_DataType_Variables/Practice_Exersices/Practice_Exersices7.iml" filepath="$PROJECT_DIR$/02_DataType_Variables/Practice_Exersices/Practice_Exersices7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice_Problems/Practice_Problems.iml" filepath="$PROJECT_DIR$/Practice_Problems/Practice_Problems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Source Code.iml" filepath="$PROJECT_DIR$/.idea/Source Code.iml" />
+    </modules>
+  </component>
+</project>

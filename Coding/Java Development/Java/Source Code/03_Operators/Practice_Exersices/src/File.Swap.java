@@ -16,7 +16,7 @@ class Swap {
         System.out.println("Second Value: " + num2);
 
         //Swap Logic
-        int temp = num1; //taking temporary
+        int temp = num1; //taking temporary variable
         num1 = num2;
         num2 = temp;
 

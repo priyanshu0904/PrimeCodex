@@ -11,6 +11,13 @@
 ## Official Github Repo
 - [OpenJDK](https://github.com/openjdk)
 
+## Tutorial
+- Tutorials Point
+- W3Schools
+- GeeksForGeeks
+- TPointTech
+- Google Search
+
 ## Books to be Followed
 - Core Java Volume 1 and 2 by Oracle
 - Java : The Complete Reference by McGraw Hills 
