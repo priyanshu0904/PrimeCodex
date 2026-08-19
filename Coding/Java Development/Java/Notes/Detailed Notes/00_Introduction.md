@@ -13,8 +13,8 @@
 - Rule of writing code -> Syntax (Exact syntax is important)
 
 ## History of Java
-- James Gosling at Sun Microsystems in early 1990s.
-- First named as 'Oak', later 'Java' during first release in 1995. Oak - tree and java - island
+- Created by James Gosling at Sun Microsystems in early 1990s.
+- First named as 'Oak', later 'Java' during first release in 1995. Oak -> tree and java -> island (Coffee beans)
 - Write Once, Run Anywhere
 - Backward Compatibility -> New versions can run in older one -> Coffee mug logo related
 - In 2008-09, occupied by **Oracle**.
