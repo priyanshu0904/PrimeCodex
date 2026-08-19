@@ -1,4 +1,4 @@
-# Java Mastery — Comprehensive Practice & Problem Bank
+# Java Mastery — Comprehensive Practice & Problem Bank - Become Java Ready
 
 > **Goal:** Build genuine Core Java mastery through progressively difficult practice, combining the supplied Java practice exercises with an expanded set of original problems. The source material covers Java fundamentals, variables/input, operators, loops, methods, arrays, OOP, collections, exceptions, file handling, generics, Java 8+ features, streams, and multithreading; the original 150-question bank also provides a progression through these areas.  
 
