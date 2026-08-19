@@ -1,7 +1,8 @@
 - [✔️] 00_Introduction
-- [] 01_Java_Basics
-- [] 02_DataType_Variables
-- [] 03_Operators
-- [] 04_Conditional_Statements
-- [] 05_Functions_Methods
-- [] 06_Arrays
+- [✔️] 01_Java_Basics
+- [✔️] 02_DataType_Variables
+- [✔️] 03_Operators
+- [✔️] 04_Conditional_Statements
+- [✔️] 05_Functions_Methods
+- [✔️] 06_Arrays
+- [] 07_Classes_And_Objects

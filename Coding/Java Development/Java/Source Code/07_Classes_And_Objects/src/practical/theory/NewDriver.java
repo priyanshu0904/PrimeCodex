@@ -22,7 +22,8 @@ public class NewDriver {
 
         //can create objects of different classes
         NewDriver myDriver = new NewDriver(); //Creating instance or object of NewDriver class.
-        myDriver.dateOfLicense = "1/4/2026"; //can use non-static member by creating object
+
+        myDriver.dateOfLicense = "1/4/2026"; //can use non-static member by creating object within same class
         System.out.println(minimumAgeForDriving);//can directly access static members within same class
         //System.out.println(age);//can't use directly non-static members
         System.out.println(myDriver.minimumAgeForDriving); //can access the static members using the object reference but it is not recommended

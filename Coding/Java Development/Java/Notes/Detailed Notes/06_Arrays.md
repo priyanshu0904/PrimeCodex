@@ -4,7 +4,7 @@
 - Array length = last index + 1;
 - Object Reference, can be saved in variable
 - ArrayOutOfBoundException -> If array overflows or underflows
----
+
 ## One Dimensional Array
 ```java
 type_array name = new type_element[length];
@@ -15,7 +15,7 @@ int[] brr = {1,2,3,4,5}; //size automaic detected
 ```
 - Array's last index = length - 1;
 - Length = array_name.length; //property
----
+
 ## Two Dimensional Array
 - Memory location -> Linear but logic 2D
 - Array of Arrays.

@@ -5,7 +5,7 @@ public class NewestDriver {
     public static void main(String[] args) {
         Car buggati = new Car("Pink");
         Car thar = new Car();
-        thar = null; //For finalize() but it is removed by java in newer versions
+        thar = null; //For finalize() but it is removed by java in newer versions, code practice
         buggati.start().drive();
         System.out.println(buggati.color);
         System.out.println(buggati.maxSpeed);

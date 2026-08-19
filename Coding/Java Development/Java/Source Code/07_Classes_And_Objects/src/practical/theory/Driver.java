@@ -5,6 +5,7 @@ public class Driver {
         //Creating Object of Car class
         Car myCar;//declaring class
         myCar = new Car(); //declaring objects
+
         //Just a demo and considering only drive method, such that considering car is started and have enough petrol.
         System.out.println(myCar.color);
         System.out.println(myCar.currentFuelInLiters);

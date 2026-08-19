@@ -3,7 +3,7 @@ package practical.theory;
 public class Car { //Class
     //Instance variables or properties or attribute
     static int noOfCarsSold; //static variables, shared by all objects
-    int noOfWheels;
+    int noOfWheels; //used globally, global variable
     String color;
     float maxSpeed;
     float currentFuelInLiters;
@@ -11,18 +11,21 @@ public class Car { //Class
 
     //code blocks
     static {
+        //static block -> Runs once, when class loaded
         noOfCarsSold = 0;
         System.out.println("I am in static block.");
     }
 
     {
+        //Initialization block -> Run each time immediately after object creation
         noOfCarsSold++;
         System.out.println("I am in initialization block.");
     }
-    //By default values are assigned when no explicit constructor are in the class, Default constructor
+
+    //By-default default values are assigned when no explicit constructor are in the class, Default constructor called by compiler
 
     //Constructor
-    public Car(String color){ //Default and Parameterized Constructor
+    Car(String color){ //Default and Parameterized Constructor
         //can use all parameters in parameterized constructor
         this.color = color; //This refers to current object
         noOfWheels = 4;
@@ -42,7 +45,7 @@ public class Car { //Class
 
     Car(){
         //Constructor Chaining
-        //this used to invoke same constructor of same class
+        //this used to invoke another constructor of same class
         this("Black"); //Must be first statement
         currentFuelInLiters = 5;
     }
@@ -71,7 +74,7 @@ public class Car { //Class
         //currentFuelInLiters += currentFuelInLiters;
     }
 
-    public void removeFuel(float fuel){
+    public void removeFuel(float fuel){ //local variable
         currentFuelInLiters -= fuel;
         //makes no sense, but it's the demo that parameters can be both type
     }

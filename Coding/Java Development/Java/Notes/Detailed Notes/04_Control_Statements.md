@@ -7,7 +7,7 @@
 2. if-else : if(condition) {} else{}
 3. if-else ladder : if(condition1) {} else if(condition2) {}.......else {}
 4. Nested if-else : if(condition1) {if(condition2) {} else {}}.....else {if(condition3) {} else {}}
----
+
 # Looping Statements
 - Looping and Iterative Statements.
 - Code block runs till condition false
@@ -23,6 +23,6 @@ while(condition){
 	//updation
 }
 ```
----
+
 # Jumping Statements
 - break, continue, return
