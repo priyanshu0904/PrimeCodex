@@ -30,7 +30,7 @@
 - It provides security because it runs on Virtual Machine.
 
 ## Buzzwords
-- Robust, Multithreaded, Architecture neutral, Interpreted and high performance, Distributed, Simple, Object-oriented, Secure, Portable, Dynamic
+- Robust, Multithreaded, Architecture neutral, Interpreted and high performance, Distributed, Simple, Object-oriented, Secure, Portable, Dynamic.
 
 
 
