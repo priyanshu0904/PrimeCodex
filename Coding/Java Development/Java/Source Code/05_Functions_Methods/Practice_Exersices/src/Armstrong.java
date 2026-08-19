@@ -17,12 +17,12 @@ public class Armstrong {
 
     public static boolean isArmstrong(int num){
         int noOfDigitsigits = digit(num);
-        int sum = 0;
+        int sum = 0; //Accumulator pattern
         int i = num;
         while(i > 0){
             int digit = i % 10;
             i /= 10;
-            sum += power(digit,noOfDigitsigits);
+            sum += power(digit,noOfDigitsigits); //Accumulator pattern
         }
         return  sum == num;
     }

@@ -29,7 +29,7 @@ Conventions are not rules but just used for better code visibility and understan
 
 ## Literals
 - The value associated with the variable.
-- Integer literals, floating-point, boolean, character, String, Long etc.
+- Integer literals, floating-point, boolean, character, String, Long, double etc.
 
 ## Keywords
 - These are reserved words by Java, some of these are not in use: 
@@ -48,7 +48,7 @@ abstract, assert, boolean, break, byte, case, catch, char, class, const, continu
 - import java.util.Scanner;
 - Scanner sc = new Scanner(System.in); //Object of Scanner class
 - nextInt(), nextDouble(), nextFloat(), nextLong(), nextShort(), nextLine() -> String etc
-- next(); -> It stops after first whitespace -> single word or token
+- next(); -> It stops after first whitespace -> used for single word or token
 
 ## Type Conversion and Casting
 ### 1. Implicit Conversion

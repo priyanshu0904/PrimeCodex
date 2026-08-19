@@ -13,15 +13,15 @@
 - Rule of writing code -> Syntax (Exact syntax is important)
 
 ## History of Java
-- James Gosling at Sun Microsystems in early 1990s.
-- First named as 'Oak', later 'Java' during first release in 1995. Oak - tree and java - island
+- Created by James Gosling at Sun Microsystems in early 1990s.
+- First named as 'Oak', later 'Java' during first release in 1995. Oak -> tree and java -> island (Coffee beans)
 - Write Once, Run Anywhere
 - Backward Compatibility -> New versions can run in older one -> Coffee mug logo related
 - In 2008-09, occupied by **Oracle**.
 - After 2018-19, many Java versions had come.
 - C/C++ directly compiles to machine code and that can not be run on different machines.
 - Java/Python uses bytecode concept. JVM converts machine specific machine code or LLL.
-- Timeline and History
+- **Timeline and History**
 
 ## ByteCode
 - ByteCode -> Platform Independent, not human understandable, not machine code.

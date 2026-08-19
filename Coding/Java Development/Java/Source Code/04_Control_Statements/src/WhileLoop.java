@@ -2,12 +2,18 @@ import java.util.Scanner;
 
 public class WhileLoop {
     public static void main(String[] args) {
-        int start = 1; //Initialization
+        //Looping or iterative statements, code block runs till the condition become false
+        //To automate repetitive tasks
+        //Iterations -> How many time loop runs
+
+        //while -> used for non-standard condition
+
+        int start = 1; //Initialization, only once
 
         //To print 10 numbers
         while(start <= 100){ //Condition
             System.out.println(start); //Actual work
-            start++; //Updating
+            start++; //Updation, to avoid infinite loop
         }
 
         int end = 500;

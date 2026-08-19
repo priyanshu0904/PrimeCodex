@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class ArrayUtility {
+    //All functions are static, they can be used in any class by directly class_name.method_name() without creating object
     public static int[] inputArray(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Please enter the number of elements: ");

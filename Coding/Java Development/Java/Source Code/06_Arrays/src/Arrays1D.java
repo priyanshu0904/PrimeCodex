@@ -4,7 +4,8 @@ public class Arrays1D {
     public static void main(String[] args) {
         //1D array means array has one dimension only.
 
-        int[] marks = new int[5];
+        int length = 5; //if length is 5 then index: 0-4, length is actual size
+        int[] marks = new int[length]; //can be variable but must be initialized before it.
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Welcome to Marks Database");

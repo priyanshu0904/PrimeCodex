@@ -22,6 +22,7 @@ public class ArraySearching {
     }
 
     public static boolean isFound(int[] arr, int num){
+        //can be use as a method parameter
         int index = 0;
         while(index < arr.length){
             if(arr[index] == num) return true;

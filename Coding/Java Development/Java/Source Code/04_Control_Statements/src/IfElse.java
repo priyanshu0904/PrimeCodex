@@ -1,22 +1,28 @@
 public class IfElse {
     public static void main(String[] args) {
-        //If else is also called as branching or control statements
+        //if-else is also called as branching or decision-making or conditional statements. Part of control statement.
+        //Firstly the condition will be checked
+        //Important, only one of all the block will execute wherever the condition true for first time.
 
+        //You can use only if without else
         int a = 9;
         if(a == 9){
             System.out.println("Hello 9......");
         }
 
-        boolean isMale = true;
+        //traditional and basic if-else statement
+        boolean isMale = true; //using variable to store the conditional value
         String name = "Priyanshu";
 
         System.out.println("Before if");
+
+        //if the condition is true then if block executed otherwise the else block.
         if(isMale){
             System.out.println("Mr. " + name);
         }
         else
             System.out.println("Mrs. " + name);
-        //You can remove the curly braces from if or else if there is only one statement inside it.
+        //You can remove the curly braces from if or else if there is only one statement inside it. It is valid till first semicolon.
 
         System.out.println("After if");
 

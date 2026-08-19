@@ -76,7 +76,7 @@
 - AND(&) 
 - OR(|)
 - XOR(^)
-- NOT(~) -> ~x = -(x + 1)
+- NOT(~) -> ~x = -(x + 1) -> Complement
 - Left Shift(<<) -> a << b -> a \* 2<sup>b</sup>
 - Right Shift(>>) -> a >> b -> a \/ 2<sup>b</sup>
 - Last bit 0 -> Even, 1 -> Odd

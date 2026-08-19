@@ -1,6 +1,13 @@
 public class ArraysBasics {
     public static void main(String[] args) {
-        int[] myArr = new int[5];
+        //Array creates multiple spaces for same data type and with same name and different indexing
+        //Manage them by own, looping etc.
+
+        int[] myArr = new int[5]; //object reference
+        //index starts with 0 and stored in continuous memory location like arr[0] at 100, then 104 then 108.....int = 4 bytes
+        //Size can't change later, fixed length(use for size of array)
+        //myArr is reference of Array object
+
         myArr[0] = 98;
         myArr[1] = 88;
         myArr[3] = 78;
@@ -15,6 +22,7 @@ public class ArraysBasics {
         System.out.println(myArr[2]);
         System.out.println(myArr[3]);
         System.out.println(myArr[4]);
+        //Array length = last index + 1;
 //        System.out.println(myArr[5]); -> ArrayIndexOutOfBoundsException
 
         System.out.println(yourArr[0]);

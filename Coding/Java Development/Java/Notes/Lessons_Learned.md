@@ -3,3 +3,4 @@
 3. Always check the edge cases.
 4. Always check that integer division creates no issue.
 5. Use brackets for clarification.
+6. To debug any code or find error, you can use System.out.println(...); statement.

@@ -1,4 +1,4 @@
-package basics;
+package practical.theory;
 
 public class NewestDriver {
     //This Class is used after the default constructor is initialized in Car class

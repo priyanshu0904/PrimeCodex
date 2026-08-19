@@ -18,7 +18,7 @@ to bytecode -> javac Main.java
 to execute bytecode -> java Main //JVM
 then got output in console/terminal
 
-cat Main.java -> content inside Main
+cat Main.java -> to see content inside Main
 ```
 
 ## Boilerplate Code
@@ -34,7 +34,7 @@ public class Main{
 ## Anatomy
 - First Letter of class -> Capital
 - The class name must be same as file name.
-- Only one public class in a file and name same as File name. Other non-public classes can be created.
+- Only one public class in one file and name same as File name. Other non-public classes can be created.
 
 ## File Extensions
 ### 1. .java
@@ -67,7 +67,7 @@ public static void main(String[] args)
 ```
 - Structure is fixed, used by JVM directly.
 - Entry point for execution by JVM.
-- must be public and static for accessible by JVM without creating object
+- Must be public and static for accessible by JVM without creating object
 - If you don't write main method so compiler compiles it as there is no syntax error but the JVM gives an error.
 
 ## IDE
@@ -83,15 +83,18 @@ public static void main(String[] args)
 - //Single line comment -> Shortcut is ctrl + /
 - /* Multi 
   Line 
-  Comment */- /** Java 
+  Comment */
+- /** Java 
   * Docs
   * Used for definition to write in code
   * Can see upon hover */
 Java Docs are applied before any Java method or class only. Document of any Java method or class. You can see upon hover to that class.
+
+You can see the documentation of any function by just hovering over it. And to go to the source code just ctrl + click.
 ```
 
 # Flowchart and Algorithms
-- Flowchart -> Diagramatical representation to solve problem
+- Flowchart -> Diagrammatical representation to solve problem
 - Algorithm -> Steps to solve problem
 - Pseudo Code -> Looking like code but not the actual code
 

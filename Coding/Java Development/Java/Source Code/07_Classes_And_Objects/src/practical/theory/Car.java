@@ -1,8 +1,8 @@
-package basics;
+package practical.theory;
 
-public class Car {
+public class Car { //Class
     //Instance variables or properties or attribute
-    static int noOfCarsSold;
+    static int noOfCarsSold; //static variables, shared by all objects
     int noOfWheels;
     String color;
     float maxSpeed;
@@ -19,19 +19,19 @@ public class Car {
         noOfCarsSold++;
         System.out.println("I am in initialization block.");
     }
-    //By default values are assigned
+    //By default values are assigned when no explicit constructor are in the class, Default constructor
 
     //Constructor
-    Car(String color){ //Default and Parameterized Constructor
+    public Car(String color){ //Default and Parameterized Constructor
         //can use all parameters in parameterized constructor
-        this.color = color;
+        this.color = color; //This refers to current object
         noOfWheels = 4;
         maxSpeed = 150;
         currentFuelInLiters = 2;
         noOfSeats = 5;
     }
 
-//    Car(){ //Default or No Argument Constructor
+//    Car(){ //No Argument Constructor
 //
 //        color = "Red";
 //        noOfWheels = 3;
@@ -42,6 +42,7 @@ public class Car {
 
     Car(){
         //Constructor Chaining
+        //this used to invoke same constructor of same class
         this("Black"); //Must be first statement
         currentFuelInLiters = 5;
     }
@@ -56,6 +57,7 @@ public class Car {
             System.out.println("Car is Started....bruhhhhhh......");
         }
 
+        //Return current class instance from method
         return this;
     }
 
