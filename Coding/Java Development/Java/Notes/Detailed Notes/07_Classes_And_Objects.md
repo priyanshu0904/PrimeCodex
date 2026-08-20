@@ -28,7 +28,7 @@ class Car{
 
 class Demo{
 	public static void main(){
-		Car newCar = new Car(); //Object of car class
+		Car newCar = new Car(); //Object of Car class
 		newCar.start();
 		System.out.println(newCar.wheels);
 	}
@@ -37,13 +37,13 @@ class Demo{
 
 # this Keyword
 - this -> refers to current class or object
-- To invoke another constructor of same class (this())
+- To invoke another constructor of same class (this()).
 - Invokes a method of the current object.
 - Can be passes as an argument in the method call.
 - Can return current class instance from the method.
 
 # static Keyword
-- Created only once, used by every objects, can be called without creating object just by class name. Property of class not objects.
+- Created only once, used by every objects, can be called without creating object just by class name. Property of class not objects. It can be variables or methods.
 -  Anti to OOP Principle
 ```java
 class_name.static_property_name;
