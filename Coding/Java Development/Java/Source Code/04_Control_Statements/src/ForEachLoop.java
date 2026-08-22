@@ -20,7 +20,8 @@ public class ForEachLoop {
 
         for (String name : array){ //parameter first for item, optional second for index
             System.out.println(name);
-            //using return, similar to continue in traditional loops
+            //we can use continue also
+            //using return is similar to continue in traditional loops
             //using break is not straightforward
             //perform action on each element and don't need to break early -> for each loop
         }
