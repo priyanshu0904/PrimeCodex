@@ -17,6 +17,7 @@ public class ForEachLoop {
     public static void printArrayForEach(String[] array){
         //traversal without any tension of updation, variable maintenance etc
         //method for array iteration, readability
+        //looping statement
 
         for (String name : array){ //parameter first for item, optional second for index
             System.out.println(name);

@@ -3,6 +3,7 @@ public class BreakAndContinue {
         System.out.println("Break statement");
         //break -> switch for preventing fall through
         //to stop a loop immediately where it is and break out of a loop
+        //Jumping statements
         System.out.println("Inside Loop");
         for(int i = 1; true; i++){
             if(i == 101){

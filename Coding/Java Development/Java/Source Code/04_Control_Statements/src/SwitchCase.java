@@ -6,6 +6,7 @@ public class SwitchCase {
         //Handles multiple values
         //types in switch -> byte, short, char, int, String, enum, long, double, float
         //Type in case label must be same as switch(type)
+        //conditional, decision-making, branching
 
         System.out.println("Welcome to day finder...\n");
         Scanner sc = new Scanner(System.in);

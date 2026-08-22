@@ -11,7 +11,7 @@ public class Return {
     }
 
     public static void greet(){
-        //function doesn't return anything, data-type is void
+        //function doesn't return anything, data-type is void, jumping statement, control statement
         System.out.println("Welcome to Calculator....\n");
         int number = input(); //ANy method can be called anywhere
         System.out.println("Any function can be called anywhere....So the number is " + number);

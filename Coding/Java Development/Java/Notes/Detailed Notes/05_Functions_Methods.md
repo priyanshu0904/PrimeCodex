@@ -32,4 +32,12 @@ access_specifier return_type method_name(data_types parameters){
 	3. with parameter no return type 
 	4. with parameter with return type
 
+# Recursion
+- self-calling function, to stop recursion -> base case and prevent infinite loop, recursive call, excessive recursion -> stack overflow
+- ideal for problems divisible into similar smaller problems
+```java
+function(){
+	function(); //recursion
+}
+```
 

@@ -1,6 +1,6 @@
 public class IfElse {
     public static void main(String[] args) {
-        //if-else is also called as branching or decision-making or conditional statements. Part of control statement.
+        //if-else is also called as branching or decision-making or conditional statements.
         //Firstly the condition will be checked
         //Important, only one of all the block will execute wherever the condition true for first time.
 

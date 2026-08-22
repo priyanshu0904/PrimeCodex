@@ -6,6 +6,7 @@ public class TernaryOperator {
         //variable = condition/expression ? true/expression1 : false/expression2 ;, you can't write print statement direct
         //datatype of variable same as expression 1 and 2
         //nested possible but not recommended, don't overuse it, reduces clarity
+        //conditional, decision-making statements
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to number checker....");
