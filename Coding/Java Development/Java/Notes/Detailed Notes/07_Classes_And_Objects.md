@@ -108,7 +108,6 @@ class_name.main();
 - Local -> Variable inside method, code blocks etc.
 
 # Garbage Collection and Finalize
-## Garbage Collection
 - Automatic, Managed by JVM, Running in background, only in heap, can affect application performance
 - Object that are no longer reachable and active -> Eligible for GC.
 - Can suggest System.gc(); but it depends, developers can not do it explicitly
