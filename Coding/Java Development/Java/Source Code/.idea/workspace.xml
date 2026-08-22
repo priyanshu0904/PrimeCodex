@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba918a0c-4995-42a6-8eee-28242dd4aece" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/01_Java_Basics/src/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Java_Basics/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/01_Java_Basics/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_Problems/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_Problems/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_Problems/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_Problems/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_Problems/out/production/Solutions/BasicCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_Problems/out/production/Solutions/BasicCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_Problems/out/production/Solutions/PersonalInformationProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_Problems/out/production/Solutions/PersonalInformationProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_Problems/out/production/Solutions/WelcomeProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_Problems/out/production/Solutions/WelcomeProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Supporting Materials/Resources.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Supporting Materials/Resources.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="3I4wlUxonDurtjzib0LlXNOzRpb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/LifeTime Coach/PrimeCodex/Coding/Java Development/Java/Source Code"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba918a0c-4995-42a6-8eee-28242dd4aece" name="Changes" comment="" />
+      <created>1787037299671</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787037299671</updated>
+    </task>
+    <servers />
+  </component>
+</project>

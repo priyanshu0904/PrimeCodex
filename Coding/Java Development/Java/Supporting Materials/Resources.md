@@ -25,4 +25,4 @@
 ## Tips
 - Code base are practical implementation.
 - Notes are just basic reference.
-- Use digital resources for detailed theory and also books and notes.
+- Use digital resources for detailed theory and also books and notes and documentation.

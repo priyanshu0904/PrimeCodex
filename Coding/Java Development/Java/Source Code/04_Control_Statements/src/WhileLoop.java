@@ -5,6 +5,7 @@ public class WhileLoop {
         //Looping or iterative statements, code block runs till the condition become false
         //To automate repetitive tasks
         //Iterations -> How many time loop runs
+        //All the things of loop can be done by all type of loop
 
         //while -> used for non-standard condition
 
