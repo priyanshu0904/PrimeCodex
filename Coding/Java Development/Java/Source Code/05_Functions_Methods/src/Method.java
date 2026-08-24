@@ -1,6 +1,6 @@
 public class Method {
     public static void main(String[] args) {
-        //Blocks of resuable code, performs specific tasks
+        //Blocks of reusable code, performs specific tasks
         //void - data_type (returns nothing)
         //JVM calls only main() method, all other methods are linked to it
 

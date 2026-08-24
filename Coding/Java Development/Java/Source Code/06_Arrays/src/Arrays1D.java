@@ -12,7 +12,7 @@ public class Arrays1D {
 
         //Getting marks of student one by one
         int index = 0;
-        while(index < marks.length){
+        while(index < marks.length){ //array.length is the property of array
             System.out.print("Enter the marks of " + (index + 1) + "th student: ");
             marks[index] = sc.nextInt();
             index++;

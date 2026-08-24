@@ -21,7 +21,7 @@ Conventions are not rules but just used for better code visibility and understan
 - isMarried, myAge etc.
 
 ## Identifiers
-- A-Z, a-z, 0-9, '\_' , '$'.
+- A-Z, a-z, 0-9, '_' , '$'
 - Can't use keywords.
 - Can't start with digit like 1name
 - Case sensitive.
@@ -39,9 +39,9 @@ abstract, assert, boolean, break, byte, case, catch, char, class, const, continu
 - \n - new line
 - \t - tab space
 - \b - backspace
-- \\' - single quote
-- \\" - double quote
-- \\\ - backslash
+- \' - single quote
+- \" - double quote
+- \\ - backslash
 
 
 ## User Input

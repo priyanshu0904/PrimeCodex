@@ -29,5 +29,7 @@ public class ShorthandOperator {
         // a = a % x5;
         a %= x5; //Remainder assignment
         System.out.println(a);
+
+        //short-hand operators are possible with other operators also
     }
 }

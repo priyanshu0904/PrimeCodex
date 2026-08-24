@@ -1,6 +1,14 @@
 import java.lang.*;
+//Use Intellij IDEA IDE
+
+//Java is a high level language, object oriented
+//Steps to solve any problem is ALgorithm
+//Syntax -> Rule to write anything, exact
 public class Main{    //Boilerplate code
-    public static void main() {
+
+    //main method is the entry point of execution, must be public and static
+    //Fixed signature
+    public static void main(String[] args) {
         //Showing Output
         //Indentation
 
@@ -13,5 +21,6 @@ public class Main{    //Boilerplate code
         System.out.println(   "    Hello World!!!");
         //Java consider spaces inside the string but after that you can add as many spaces you can and java will ignore them.
 
+        //Main.java (compiler, javac) -> ByteCode Main.class (interpreter, java) -> JVM Machine code
     }
 }

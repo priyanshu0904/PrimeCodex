@@ -33,5 +33,6 @@ public class Recursion {
         }
 
         //if function call itself too much then it can cause stack overflow error
+        //iteration is faster than recursion
     }
 }
