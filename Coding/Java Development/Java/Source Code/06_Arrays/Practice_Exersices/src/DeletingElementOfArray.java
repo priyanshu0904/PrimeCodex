@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class DeletingElementOfArray {
     public static void main(String[] args) {
-        System.out.println("Welcome to Deleting Element from Array...");
+        System.out.println("Welcome to Deleting Element from given Array...");
         int[] numsArray = ArrayUtility.inputArray();
 
         Scanner sc = new Scanner(System.in);
