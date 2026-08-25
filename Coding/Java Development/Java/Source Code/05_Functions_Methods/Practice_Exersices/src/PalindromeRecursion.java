@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class PalindromeRecursion {
     public static void main(String[] args) {
-        System.out.println("Welcome to Palindrome using recursion...");
+        System.out.println("Welcome to Finding Palindrome using recursion...");
         Scanner sc = new Scanner(System.in);
         System.out.print("Please enter the string to be check for palindrome: ");
         String str = sc.next();
