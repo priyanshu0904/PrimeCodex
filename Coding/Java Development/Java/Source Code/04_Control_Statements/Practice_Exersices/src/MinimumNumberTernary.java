@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class MinimumNumberTernary {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Welcome to PrimeCodex minimum finding...");
+        System.out.println("Welcome to PrimeCodex minimum number finding...");
 
         System.out.print("Enter first number: ");
         int num1 = sc.nextInt();
@@ -12,7 +12,7 @@ public class MinimumNumberTernary {
 
         MinimumNumberTernary min = new MinimumNumberTernary();
         int minimum = min.minimum(num1, num2);
-        System.out.println("Minimum is " + minimum);
+        System.out.println("Minimum number is " + minimum);
     }
 
     public int minimum(int num1, int num2){
