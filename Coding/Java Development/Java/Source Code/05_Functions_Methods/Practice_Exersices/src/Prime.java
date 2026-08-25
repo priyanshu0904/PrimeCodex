@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Prime {
     public static void main(String[] args) {
-        System.out.println("Welcome to Prime Checker");
+        System.out.println("Welcome to PrimeCodex Prime Checker");
         int num = userInput();
         if(isPrime(num)){
             System.out.println("Prime Number.");
