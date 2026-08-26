@@ -5,6 +5,7 @@ public class Array2D {
         //For 2D arrays consider or imagine it like a table of rows and columns.
         //Array of arrays.
         //Memory location linear but logic 2D
+        //ArrayIndexOutOfBoundException Error also occurs here.
 
         //int[][] arr = {}; // Considered that it has 0 rows.
         //int[][] arr = {{}}; //Considered that it has 1 row and 0 column.
