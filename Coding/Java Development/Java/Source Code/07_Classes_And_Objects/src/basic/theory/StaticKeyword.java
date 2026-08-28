@@ -1,7 +1,7 @@
 package basic.theory;
 
 public class StaticKeyword {
-    static int minimumAge = 18; //used by all the objects, just by class name
+    static int minimumAge = 18; //used by all the objects, just by class name, can use by creating object but not recommended 
 
     //used by only non-static and static members, by creating objects
     int salary;
