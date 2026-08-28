@@ -76,7 +76,7 @@ public class Car { //Class
 
     public void removeFuel(float fuel){ //local variable
         currentFuelInLiters -= fuel;
-        //makes no sense, but it's the demo that parameters can be both type
+        //makes no sense, but it's the demo that parameters can be both type, can use same parameters as variables or different 
     }
 
     public float getCurrentFuelLevel(){
