@@ -4,6 +4,8 @@ public class StringClass {
         //string object's value can't change, modification creates new string object -> immutable
         //Java maintains a pool of strings for efficiency, when a new object created, it is checked against the pool for a match to reuse
         //comparison -> .equals() for value and == for reference only
+        //not uses in thread environment
+        //Slowest speed than StringBuffer and StringBuilder
 
         String str1 = "abc"; //str1 and str2 refers to same object, in string pool, inside special portion in heap memory, immutable
         String str2 = "abc"; //from this mehtod, stored in string pool

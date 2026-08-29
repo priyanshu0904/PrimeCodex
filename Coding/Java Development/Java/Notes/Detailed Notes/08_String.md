@@ -29,7 +29,7 @@ String name = "Priyanshu";
 int marks = 99;
 System.out.printf("Hello %s, your marks is %d", name, marks); //sequence of variable must be same as specifier
 ```
-- Like c, do not concatenate, just work in one string
+- Like C, do not concatenate, just work in one string
 - Rule of Format-specifier :- %[flags] [width] [.precision] specifier-character
 
 ## Java Format Specifiers
@@ -96,26 +96,7 @@ System.out.printf("Hello %s, your marks is %d", name, marks); //sequence of vari
 | `%tc` | Full date and time |
 
 ### Common Formatting Patterns
-| Pattern | Purpose |
-|---|---|
-| `%.2f` | 2 decimal places |
-| `%10s` | Minimum width of 10 |
-| `%-10s` | Left-aligned, width 10 |
-| `%05d` | Zero-padded to width 5 |
-| `%+d` | Always show sign |
-| `%,d` | Grouping separator |
-| `%.5s` | Maximum 5 characters |
-| `%1$s` | Use first argument |
-| `%2$d` | Use second argument |
-
-The general syntax for a format specifier in Java / C-style `printf` formatting is:
-
-`%[argument_index$][flags][width][.precision]conversion`
-
----
-
-### 1. String Formatting (`%s`, `%S`)
-
+#### 1. String Formatting (`%s`, `%S`)
 | Pattern | Data | `printf` Output | Description |
 | --- | --- | --- | --- |
 | `'%s'` | `"Java"` | `'Java'` | Default string output |
@@ -127,9 +108,7 @@ The general syntax for a format specifier in Java / C-style `printf` formatting 
 | `'%10.2s'` | `"Java"` | `'        Ja'` | Right-aligned (width 10), max 2 characters |
 | `'%-10.2s'` | `"Java"` | `'Ja        '` | Left-aligned (width 10), max 2 characters |
 
----
-
-### 2. Decimal Integer Formatting (`%d`)
+#### 2. Decimal Integer Formatting (`%d`)
 
 | Pattern | Data | `printf` Output | Description |
 | --- | --- | --- | --- |
@@ -147,9 +126,7 @@ The general syntax for a format specifier in Java / C-style `printf` formatting 
 | `'%(d'` | `-1234567` | `'(1234567)'` | Negative numbers enclosed in parentheses |
 | `'% d'` | `1234567` | `' 1234567'` | Leading space for positive values |
 
----
-
-### 3. Floating-Point Formatting (`%f`, `%e`, `%g`)
+#### 3. Floating-Point Formatting (`%f`, `%e`, `%g`)
 
 | Pattern | Data | `printf` Output | Description |
 | --- | --- | --- | --- |
@@ -163,9 +140,7 @@ The general syntax for a format specifier in Java / C-style `printf` formatting 
 | `'%E'` | `1234.5678` | `'1.234568E+03'` | Uppercase scientific notation |
 | `'%.2e'` | `1234.5678` | `'1.23e+03'` | Scientific notation with 2 decimal precision |
 
----
-
-### 4. Other Data Types (`%c`, `%b`, `%x`, `%o`)
+#### 4. Other Data Types (`%c`, `%b`, `%x`, `%o`)
 
 | Pattern | Data | `printf` Output | Description |
 | --- | --- | --- | --- |
@@ -183,7 +158,7 @@ The general syntax for a format specifier in Java / C-style `printf` formatting 
 | `'%n'` | *none* | *(line break)* | Platform-specific newline separator |
 > **Tip:** Format specifiers are used with `String.format()`, `System.out.printf()`, `Formatter`, and related Java formatting APIs.
 
-# 🚩 Java Format Flags
+## Java Format Flags
 
 | Flag | Name | Description | Example | Output |
 |:---:|---|---|---|---|
@@ -196,11 +171,28 @@ The general syntax for a format specifier in Java / C-style `printf` formatting 
 | `(` | Parentheses | Encloses negative numbers in parentheses | `%(d` | `(42)` |
 | `<` | Previous argument | Reuses the previous argument | `%d %<d` | `42 42` |
 
-
-
-## 🧩 Combining Flags
-
-Multiple flags can be combined in a single format specifier.
-
+- Multiple flags can be combined in a single format specifier.
 ```java
 System.out.printf("%+08d%n", 42);
+```
+
+## StringBuilder and StringBuffer
+```java
+StringBuilder sb = new StringBuilder("Hello");
+StringBuffer sb1 = new StringBuffer("Hello");
+sb.append("Guys"); 
+sb1.append("Priyanshu");
+//append method is used in both
+//both are mutable and stored in heap directly
+```
+- If we have to directly return the string, so to prevent concatenation, use these
+- Speed: StringBuilder > StringBuffer > String
+- String -> Not used in threaded environment
+- StringBuilder -> Used in single threaded environment, not thread safe
+- StringBuffer -> Used in multi threaded environment, thread safe
+
+## Final Keyword
+```java
+final double PI = 3.14;
+```
+- Becomes constant, performance optimization, reduces null pointer error, helps in creating immutable objects
