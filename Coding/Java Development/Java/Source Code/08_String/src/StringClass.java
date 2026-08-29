@@ -8,6 +8,7 @@ public class StringClass {
         String str1 = "abc"; //str1 and str2 refers to same object, in string pool, inside special portion in heap memory, immutable
         String str2 = "abc"; //from this mehtod, stored in string pool
         String str3 = new String("abc"); //str3 is not in string pool, is in heap memory
+        String strNew = new String("abc"); //heap, not same reference as str3
         //from new method, stored in heap memory like other objects
 
         System.out.println(str1 == str2); //true, because the reference is same, doesn't compare actual value
@@ -16,6 +17,8 @@ public class StringClass {
         //every object have .equal() method by-default
         System.out.println(str1.equals(str3)); //true
         System.out.println(str3.equals(str1)); //true
+
+        System.out.println(str3 == strNew); //false
 
         String str4 = new String("ABC");
         System.out.println(str2.equals(str4)); //false, since it compares exactly, case-sensitive
@@ -29,7 +32,7 @@ public class StringClass {
         System.out.println(newString.length()); //gives length of string, here it is method, in array this was property
         System.out.println(newString.substring(5,8)); //generates substring from given indexes, last index is exclusive
         System.out.println(newString.equals(newString)); //compares value
-        System.out.println(newString.compareTo("HelloBaccho")); //check later
+        System.out.println(newString.compareTo("HelloBaccho")); //compares in dictionary order
         System.out.println(newString.indexOf("Fuel")); //finds index of input if exists in string and returns first index where found
         System.out.println(newString.indexOf("Hey")); //if not found return -1
 
