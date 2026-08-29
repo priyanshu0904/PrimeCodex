@@ -6,7 +6,7 @@ public class MathClass {
         System.out.println(Math.abs(-99)); //absolute value, input and output -> int
         System.out.println(Math.ceil(5.09)); //ceil value, always up, input -> double and output -> floating-point value
         System.out.println(Math.floor(5.09)); //floor value, always down, input -> double and output -> floating-point value
-        System.out.println(Math.round(5.09)); //round off, input -> double and output -> long
+        System.out.println(Math.round(5.09)); //round off to nearest integer, input -> double and output -> long
         System.out.println(Math.round(5.59));
         System.out.println(Math.max(89, 88)); //maximum of two numbers, input and output -> int,double
         System.out.println(Math.min(89, 88)); //minimum of two numbers, input and output -> int, double
