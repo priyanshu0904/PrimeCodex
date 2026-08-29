@@ -27,15 +27,13 @@ String str3 = new String("abc"); //not in string pool, heap
 ```java
 String name = "Priyanshu";
 int marks = 99;
-System.out.printf("Hello %s, your marks is %d", name, marks);
+System.out.printf("Hello %s, your marks is %d", name, marks); //sequence of variable must be same as specifier
 ```
 - Like c, do not concatenate, just work in one string
-- %[flags] [width] [.precision] specifier-character
+- Rule of Format-specifier :- %[flags] [width] [.precision] specifier-character
 
-# Java Format Specifiers
-
-## General Format Specifiers
-
+## Java Format Specifiers
+### General Format Specifiers
 | Specifier | Description | Example |
 |---|---|---|
 | `%b` | Boolean | `true` |
@@ -50,8 +48,8 @@ System.out.printf("Hello %s, your marks is %d", name, marks);
 | `%o` | Octal integer | `173` |
 | `%x` | Hexadecimal integer | `7b` |
 | `%X` | Hexadecimal (uppercase) | `7B` |
-| `%e` | Scientific notation | `1.23e+03` |
-| `%E` | Scientific notation (uppercase) | `1.23E+03` |
+| `%e` | Exponential, Scientific notation | `1.23e+03` |
+| `%E` | Exponential, Scientific notation (uppercase) | `1.23E+03` |
 | `%f` | Decimal floating-point | `123.456000` |
 | `%g` | General floating-point | `123.456` |
 | `%G` | General floating-point (uppercase) | `123.456` |
@@ -62,10 +60,7 @@ System.out.printf("Hello %s, your marks is %d", name, marks);
 | `%n` | Platform-specific newline | New line |
 | `%%` | Literal percent sign | `%` |
 
----
-
-## Date & Time Format Specifiers
-
+### Date & Time Format Specifiers
 | Specifier | Description |
 |---|---|
 | `%tH` | Hour (00–23) |
@@ -100,10 +95,7 @@ System.out.printf("Hello %s, your marks is %d", name, marks);
 | `%tF` | Date as `yyyy-MM-dd` |
 | `%tc` | Full date and time |
 
----
-
-## Common Formatting Patterns
-
+### Common Formatting Patterns
 | Pattern | Purpose |
 |---|---|
 | `%.2f` | 2 decimal places |
@@ -116,8 +108,79 @@ System.out.printf("Hello %s, your marks is %d", name, marks);
 | `%1$s` | Use first argument |
 | `%2$d` | Use second argument |
 
+The general syntax for a format specifier in Java / C-style `printf` formatting is:
+
+`%[argument_index$][flags][width][.precision]conversion`
+
 ---
 
+### 1. String Formatting (`%s`, `%S`)
+
+| Pattern | Data | `printf` Output | Description |
+| --- | --- | --- | --- |
+| `'%s'` | `"Java"` | `'Java'` | Default string output |
+| `'%S'` | `"Java"` | `'JAVA'` | Uppercase conversion |
+| `'%10s'` | `"Java"` | `'      Java'` | Right-aligned, width = 10 (padded with spaces) |
+| `'%-10s'` | `"Java"` | `'Java      '` | Left-aligned, width = 10 (padded with spaces) |
+| `'%-10S'` | `"Java"` | `'JAVA      '` | Left-aligned, width = 10, uppercase |
+| `'%.2s'` | `"Java"` | `'Ja'` | Precision: truncate string to first 2 characters |
+| `'%10.2s'` | `"Java"` | `'        Ja'` | Right-aligned (width 10), max 2 characters |
+| `'%-10.2s'` | `"Java"` | `'Ja        '` | Left-aligned (width 10), max 2 characters |
+
+---
+
+### 2. Decimal Integer Formatting (`%d`)
+
+| Pattern | Data | `printf` Output | Description |
+| --- | --- | --- | --- |
+| `'%d'` | `1234567` | `'1234567'` | Default integer output |
+| `'%12d'` | `1234567` | `'     1234567'` | Right-aligned, width = 12 |
+| `'%-12d'` | `1234567` | `'1234567     '` | Left-aligned, width = 12 |
+| `'%012d'` | `1234567` | `'000001234567'` | Zero-padded, width = 12 |
+| `'%,d'` | `1234567` | `'1,234,567'` | Locale-specific grouping separator |
+| `'%,12d'` | `1234567` | `'   1,234,567'` | Comma-separated, right-aligned (width 12) |
+| `'%+d'` | `1234567` | `'+1234567'` | Always include sign (`+` or `-`) |
+| `'%+12d'` | `1234567` | `'    +1234567'` | Sign included, right-aligned (width 12) |
+| `'%-,12d'` | `1234567` | `'1,234,567   '` | Left-aligned with grouping separator |
+| `'%+,12d'` | `1234567` | `'  +1,234,567'` | Sign included, comma-separated, right-aligned |
+| `'%+012d'` | `1234567` | `'+00001234567'` | Sign included, zero-padded to width 12 |
+| `'%(d'` | `-1234567` | `'(1234567)'` | Negative numbers enclosed in parentheses |
+| `'% d'` | `1234567` | `' 1234567'` | Leading space for positive values |
+
+---
+
+### 3. Floating-Point Formatting (`%f`, `%e`, `%g`)
+
+| Pattern | Data | `printf` Output | Description |
+| --- | --- | --- | --- |
+| `'%f'` | `1234.5678` | `'1234.567800'` | Default float (6 decimal places) |
+| `'%.2f'` | `1234.5678` | `'1234.57'` | Rounded to 2 decimal places |
+| `'%,.2f'` | `1234.5678` | `'1,234.57'` | Grouping separator with 2 decimal places |
+| `'%12.2f'` | `1234.5678` | `'     1234.57'` | Width = 12, 2 decimal places, right-aligned |
+| `'%-12.2f'` | `1234.5678` | `'1234.57     '` | Width = 12, 2 decimal places, left-aligned |
+| `'%012.2f'` | `1234.5678` | `'000001234.57'` | Zero-padded to width 12, 2 decimal places |
+| `'%e'` | `1234.5678` | `'1.234568e+03'` | Standard scientific notation |
+| `'%E'` | `1234.5678` | `'1.234568E+03'` | Uppercase scientific notation |
+| `'%.2e'` | `1234.5678` | `'1.23e+03'` | Scientific notation with 2 decimal precision |
+
+---
+
+### 4. Other Data Types (`%c`, `%b`, `%x`, `%o`)
+
+| Pattern | Data | `printf` Output | Description |
+| --- | --- | --- | --- |
+| `'%c'` | `'a'` | `'a'` | Character output |
+| `'%C'` | `'a'` | `'A'` | Uppercase character conversion |
+| `'%5c'` | `'a'` | `'    a'` | Character right-aligned (width 5) |
+| `'%b'` | `true` | `'true'` | Boolean output |
+| `'%B'` | `true` | `'TRUE'` | Uppercase boolean |
+| `'%x'` | `255` | `'ff'` | Hexadecimal (lowercase) |
+| `'%X'` | `255` | `'FF'` | Hexadecimal (uppercase) |
+| `'%#x'` | `255` | `'0xff'` | Hexadecimal with radix prefix (`0x`) |
+| `'%o'` | `255` | `'377'` | Octal representation |
+| `'%#o'` | `255` | `'0377'` | Octal with radix prefix (`0`) |
+| `'%%'` | *none* | `'%'` | Literal percent sign |
+| `'%n'` | *none* | *(line break)* | Platform-specific newline separator |
 > **Tip:** Format specifiers are used with `String.format()`, `System.out.printf()`, `Formatter`, and related Java formatting APIs.
 
 # 🚩 Java Format Flags
@@ -127,13 +190,13 @@ System.out.printf("Hello %s, your marks is %d", name, marks);
 | `-` | Left-justify | Left-aligns the formatted value within the given width | `%-10s` | `Java      ` |
 | `#` | Alternate form | Uses an alternate form for certain conversions | `%#x` | `0xff` |
 | `+` | Sign | Always includes the sign (`+` or `-`) | `%+d` | `+42` |
-| ` ` | Space | Adds a leading space for positive numbers | `% d` | ` 42` |
+| ` ` | Space | Adds a leading space for positive numbers and minus sign for negative | `% d` | ` 42` |
 | `0` | Zero-padding | Pads the value with zeros | `%05d` | `00042` |
 | `,` | Grouping | Adds locale-specific grouping separators | `%,d` | `1,000,000` |
 | `(` | Parentheses | Encloses negative numbers in parentheses | `%(d` | `(42)` |
 | `<` | Previous argument | Reuses the previous argument | `%d %<d` | `42 42` |
 
----
+
 
 ## 🧩 Combining Flags
 
