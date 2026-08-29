@@ -10,9 +10,10 @@
 ## Ternary Operator
 - data_type variable = condition ? expression(true) : expression(false);, expressions data type same as variable
 - Nesting possible, don't overuse it
+- Can use on behalf of if-else
 
 ## switch-case
-- Multiple values for expression, checks only equality, supported for data types byte, short, int, char, String, long, enums, float, double
+- Multiple values for expression, checks only equality, supported for data types byte, short, int, char, String, long, enums, float, double, case are always constants
 - break use to prevent fall through between cases.
 - default -> If no cases executes then default executes, optional, break not required
 ```java

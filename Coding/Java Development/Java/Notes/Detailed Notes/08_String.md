@@ -2,7 +2,10 @@
 ## toString Method
 - String representation of an object
 - Inherited from Object Class.
-- By default returns ClassName@HashCode, otherwise whatever you want to return
+- By default returns ClassName@HashCode, otherwise whatever you want to return, when you call the object, toString method automatically called
+```java
+System.out.println(obj); //means it calls obj.toString()
+```
 - Automatically called in string concatenation
 
 ## String Class
@@ -20,8 +23,12 @@ String str3 = new String("abc"); //not in string pool, heap
 - length() -> here it is method, length of string
 - substring(a,b) -> creates substring in range a to b-1
 - equals() -> comparison
+- equalsIgnoreCase() -> comparison, case-insensitive
 - compareTo() -> compares in dictionary order
 - indexOf() -> find index of input value in string, if not then -1
+- concat() -> used for concatenation
+- toUpperCase -> converts all to upper case
+- toLowerCase -> converts all to lower case
 
 ### String Format
 ```java
@@ -195,4 +202,4 @@ sb1.append("Priyanshu");
 ```java
 final double PI = 3.14;
 ```
-- Becomes constant, performance optimization, reduces null pointer error, helps in creating immutable objects
+- Becomes constant can't be changed later, performance optimization, helps in creating immutable objects, must be initialized constructor completes reduces null pointer error
