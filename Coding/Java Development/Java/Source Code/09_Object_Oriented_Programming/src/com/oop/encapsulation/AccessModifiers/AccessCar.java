@@ -1,10 +1,13 @@
 package com.oop.encapsulation.AccessModifiers;
 
 public class AccessCar {
-    public String color;
-    public String model;
-    private double fuelLevel;
-    long costOfPurchase;
+    public String color; //public - access everywhere
+    public String model; //public
+    private double fuelLevel; //private - access within defining class only
+    long costOfPurchase; //default - access only in same package, no keyword, package-private
+    protected int num; //protected - access in same package and in subclass
+    //method, constructor, variables can use all the modifiers
+    //class -> only public or default
 
     public AccessCar(){
         //default constructor

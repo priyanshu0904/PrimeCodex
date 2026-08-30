@@ -27,11 +27,7 @@
 - ByteCode -> Platform Independent, not human understandable, not machine code.
 - Java compiler : Source code to Bytecode and JVM (individual machine) : Bytecode to machine code and starts execution (interpreter)
 - Bytecode must not be changed.
-- It provides security because it runs on Virtual Machine.
+- It provides security because it runs on Virtual Machine. Java changed the internet
 
 ## Buzzwords
 - Robust, Multithreaded, Architecture neutral, Interpreted and high performance, Distributed, Simple, Object-oriented, Secure, Portable, Dynamic.
-
-
-
-

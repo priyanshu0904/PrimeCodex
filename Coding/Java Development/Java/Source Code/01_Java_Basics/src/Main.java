@@ -1,12 +1,15 @@
-import java.lang.*;
+import java.lang.*; //by default imported
 //Use Intellij IDEA IDE
 
-//Java is a high level language, object oriented
+//Java is a high level language, object oriented, rich APIs and community support
+//computer -> 0/1 or ON/OFF
+//giving instructions, tell computer what to do, code, HLL
+//compiler -> HLL ---> LLL
 //Steps to solve any problem is ALgorithm
 //Syntax -> Rule to write anything, exact
 public class Main{    //Boilerplate code
 
-    //main method is the entry point of execution, must be public and static
+    //main method is the entry point of execution by JVM, must be public and static
     //Fixed signature
     public static void main(String[] args) {
         //Showing Output

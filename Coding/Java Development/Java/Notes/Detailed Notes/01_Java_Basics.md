@@ -13,8 +13,8 @@ C://.......>javac -version
 
 ```
 *Steps to run a Java program:*
-source code -> Main.java
-to bytecode -> javac Main.java
+source code -> Main.java //compilation
+to bytecode -> javac Main.java //running
 to execute bytecode -> java Main //JVM
 then got output in console/terminal
 
@@ -97,5 +97,3 @@ You can see the documentation of any function by just hovering over it. And to g
 - Flowchart -> Diagrammatical representation to solve problem
 - Algorithm -> Steps to solve problem
 - Pseudo Code -> Looking like code but not the actual code
-
-

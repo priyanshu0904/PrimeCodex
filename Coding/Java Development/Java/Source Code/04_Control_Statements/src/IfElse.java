@@ -17,7 +17,7 @@ public class IfElse {
         System.out.println("Before if");
 
         //if the condition is true then if block executed otherwise the else block.
-        if(isMale){
+        if(isMale){ //condition can store in variable
             System.out.println("Mr. " + name);
         }
         else

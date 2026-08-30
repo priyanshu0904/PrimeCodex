@@ -15,5 +15,6 @@ public class Test {
 
         Demo df = new Demo();
         df.demo = 55;
+        //default, can use in same package
     }
 }

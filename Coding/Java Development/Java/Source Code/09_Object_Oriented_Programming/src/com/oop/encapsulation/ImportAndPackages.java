@@ -9,6 +9,8 @@ import java.util.*; //on-demand import -> imports all classes from package
 import com.oop.demo.Encapsulation;
 //import is used to bring classes and interfaces from other packages to current fie, making them accessible without using a fully qualified name
 
+//no need import in same package
+
 public class ImportAndPackages {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

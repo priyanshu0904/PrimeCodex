@@ -3,6 +3,7 @@ public class Comments {
      * This is my main method.
      * This is used for methods documentation.
      * @param args
+     * @return return
      */
     public static void main(String[] args) {
         //This is a single line comment.

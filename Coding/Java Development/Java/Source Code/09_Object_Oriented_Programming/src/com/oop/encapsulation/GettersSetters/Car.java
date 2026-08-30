@@ -16,6 +16,9 @@ public class Car {
     public String getColor(){
         return color;
     }
+    //getMethod retrieve private field and setMethod updates it
+    //controlled access and allow for validation logic
+    //can make read-only and write-only, internal change doesn't affect external interfaces
 
     void setColor(String color){
         if(color.equals("Yellow")){

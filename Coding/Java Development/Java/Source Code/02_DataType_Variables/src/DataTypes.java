@@ -4,6 +4,7 @@ public class DataTypes {
         //1 bit - only store 0/1
         //1 byte = 8 bit
         //camelCase naming convention is used
+        //byte, short, int, long, char, float, double, boolean
 
         //integer literal
         int myInt = 5; //5 is integer literal

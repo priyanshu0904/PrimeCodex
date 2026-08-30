@@ -2,6 +2,7 @@
 ```java
 data_type variable_name = value/literals;
 ```
+- Stored in memory cells or locations
 
 ## Data Types
 - data_type(default size, default value)
@@ -39,9 +40,9 @@ abstract, assert, boolean, break, byte, case, catch, char, class, const, continu
 - \n - new line
 - \t - tab space
 - \b - backspace
-- \' - single quote
-- \" - double quote
-- \\ - backslash
+- \\' - single quote
+- \\" - double quote
+- \\\ - backslash
 
 
 ## User Input

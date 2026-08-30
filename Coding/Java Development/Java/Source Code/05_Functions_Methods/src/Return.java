@@ -12,6 +12,7 @@ public class Return {
 
     public static void greet(){
         //function doesn't return anything, data-type is void, jumping statement, control statement
+        //can return anything, value, variable, calculation, string etc
         System.out.println("Welcome to Calculator....\n");
         int number = input(); //ANy method can be called anywhere
         System.out.println("Any function can be called anywhere....So the number is " + number);
@@ -26,7 +27,7 @@ public class Return {
         System.out.print("Please enter the number: ");
         int num = sc.nextInt(); //This is also a method
         if(num == 0){
-            return 0; //return ends the function immediately
+            return 0; //return ends the function immediately, kind of jumping statements
         }
         return num; //it can return only one thing not multiple
     }
