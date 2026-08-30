@@ -1,4 +1,4 @@
-package com.oop.inheritance.objectClass.equals;
+package com.oop.inheritance.objectClass.equalsAndHashCode;
 
 public class EqualsAndHashCodeTest {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class EqualsAndHashCodeTest {
             System.out.println("Equal");
         }else{
             System.out.println("Not Equal");
-        }//answer is Not Equal, bcoz two diff object in heap, diff reference
+        }//answer is Not Equal, because two different object in heap, diff reference
         //== checks reference
 
 //        if(man.equals(woman)){
@@ -29,7 +29,7 @@ public class EqualsAndHashCodeTest {
             System.out.println("Equal");
         }else{
             System.out.println("Not Equal");
-        }
+        }//not equal
 
         //String class define it's equal, so no issue in that
 

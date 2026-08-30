@@ -14,3 +14,9 @@
 - sin(), cos(), tan() -> trigonometric functions
 
 > Don't learn syntax. Use Google, Official Documentation, ChatGPT etc. Just focus on understanding.
+
+## Object Class
+
+## Scanner Class
+
+## System Class

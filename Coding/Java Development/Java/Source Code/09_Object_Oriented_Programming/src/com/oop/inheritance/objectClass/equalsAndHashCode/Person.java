@@ -1,6 +1,5 @@
-package com.oop.inheritance.objectClass.equals;
+package com.oop.inheritance.objectClass.equalsAndHashCode;
 
-import java.awt.*;
 import java.util.Objects;
 
 public class Person {
@@ -27,7 +26,7 @@ public class Person {
 //    @Override
 //    public boolean equals(Object obj) {
 //        //return super.equals(obj); -> super means, run this of my parent
-//        if(!(obj instanceof Person)){
+//        if(!(obj instanceof Person)){ //checks whether they are of same class or not
 //            return false;
 //        }
 //        Person per = (Person) obj;
@@ -44,15 +43,22 @@ public class Person {
 
     @Override
     public boolean equals(Object o) {
+        //checks logical equality of object, by default compares references, overridden to compare object states
         if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
+        Person person = (Person) o; //type casting of class
         return age == person.age && Objects.equals(name, person.name) && Objects.equals(id, person.id);
     }
 
     @Override
     public int hashCode() {
+        //generates integer hashcode representation of an object, crucial for HashMap etc
         return Objects.hash(name, age, id);
     }
+
+    //Equals-HashCode Contract: if two object are equal based on equals(), they must have same hashcode
+    //but two objects with same hashcode are not necessarily equal
+
+    //override both, equals() and hashCode() to maintain consistency between them
 
     public String getName() {
         return name;

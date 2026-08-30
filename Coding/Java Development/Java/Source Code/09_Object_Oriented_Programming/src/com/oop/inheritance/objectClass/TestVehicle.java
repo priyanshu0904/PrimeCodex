@@ -4,7 +4,8 @@ public class TestVehicle {
     public static void main(String[] args) {
         BMW bmw = new BMW();
 
-        //these are the methods of Object class
+        //these are the methods of Object class, these can be overridden
+        //if you override them in subclass then predefined method will not work
         System.out.println(bmw.toString());
         System.out.println(bmw.hashCode());
         System.out.println(bmw.getClass());
