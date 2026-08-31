@@ -1,6 +1,11 @@
 package com.oop.abstraction.abstractKeyword;
 
 public abstract class Vehicle {
+    //abstract class and abstract method
+    //abstract class -> you can't create object of it directly, non-instantiable, base classes
+    //abstract method -> defines method without implementations, subclasses will define it by specific functionality
+    //for abstract method, class must be abstract but vice versa is not true
+
     private int noOfTyres;
 
     //for abstract method, class must be abstract

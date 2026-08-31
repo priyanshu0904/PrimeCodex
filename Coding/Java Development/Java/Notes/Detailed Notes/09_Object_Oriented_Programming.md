@@ -84,3 +84,22 @@ Car.Tyre tyre = car.new Tyre(); //associated with instance of outer class
 
 - Local Inner Class -> Within a block or method, not accessible outside
 - Anonymous Inner Class -> Nameless and use for single-use implementation
+
+## Abstraction
+- Hides complex implementation, showing essential features only, focusing on functionality means what an object does not on how it does
+- Simplifies complexity, Real-world modeling(create object with real-life entities)
+- Ladder of Abstraction: Far(less complex), near(more complex) -> try to make less complex for user
+
+### abstract Keyword
+- Abstract Class and Abstract Method
+- Abstract Class -> no object created, non-instantiable, base class
+- Abstract Method -> defines without implementations, subclasses require to provide specific functionality
+- Subclasses must implement all the abstract methods of abstract class, otherwise make itself abstract
+- Every subclass defines by its own, flexibility
+- Constructor of parent must be called in child, explicit constructor
+
+### Interfaces
+- declare abstract methods, public and abstract methods, can be overridden in any subclass whether it is abstract
+- can have default methods with implementations and static methods
+- interface keyword is used, to inherit implements keyword is used, multiple interface allows means multiple inheritance
+- Can use extends and implements simultaneously

@@ -1,6 +1,7 @@
 package com.oop.abstraction.interfaces;
 
 public abstract class Vehicle implements Transport{
+    //can use extends and implements simultaneously
     //this is also a type of inheritance, but use implements, since it is interface
     private int noOfTyres;
 

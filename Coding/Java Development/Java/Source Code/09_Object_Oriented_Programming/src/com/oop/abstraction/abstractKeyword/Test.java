@@ -6,7 +6,7 @@ public class Test {
         //when abstract is applied then we can't create object of Vehicle which makes sense
         //Vehicle vh = new Vehicle(2);
         Car car = new Car();
-        car.commute(); //can use property of vehicle through it's child class
+        car.commute(); //can use property of vehicle through its child class
         car.makeStartSound();
 
         MotorCycle motor = new MotorCycle();

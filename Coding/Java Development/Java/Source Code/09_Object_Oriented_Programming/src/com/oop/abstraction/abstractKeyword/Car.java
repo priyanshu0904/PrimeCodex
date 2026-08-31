@@ -8,6 +8,8 @@ public class Car extends Vehicle {
         super(4);
     }
 
+    //subclasses must have to implement all abstract methods of its parent abstract class
+    //if you don't want to implement, just declare that class also as abstract, now responsibility goes to current class child
     @Override
     public void makeStartSound() {
         System.out.println("Vrooooom.....");
