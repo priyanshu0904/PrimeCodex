@@ -73,6 +73,7 @@
 - We can define classes inside classes, to logically grouping classes, improving encapsulation, enhances code readability
 - Static Nested Class -> static member of outer class, can access static members only directly, otherwise creating object
 - Inner Classes or Non-static classes -> associated with instance of outer class, can access all members including private
+- Nested or inner classes can be private and protected also
 ```java
 //Car is outer, Tyre is inner and Wheels is static nested class
 Car.Wheels wheels = new Car.Wheels(); //to create object
