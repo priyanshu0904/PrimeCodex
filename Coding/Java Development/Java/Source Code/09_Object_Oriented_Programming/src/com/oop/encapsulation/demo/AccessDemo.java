@@ -1,4 +1,4 @@
-package com.oop.demo;
+package com.oop.encapsulation.demo;
 
 import com.oop.encapsulation.AccessModifiers.AccessCar;
 

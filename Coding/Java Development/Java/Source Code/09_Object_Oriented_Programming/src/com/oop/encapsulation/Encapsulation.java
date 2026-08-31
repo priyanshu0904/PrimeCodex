@@ -10,7 +10,7 @@ public class Encapsulation {
         //enhance modularity -> keep classes separate and reduces coupling
 
         Scanner sc = new Scanner(System.in);
-        com.oop.demo.Encapsulation esc = new com.oop.demo.Encapsulation();
+        com.oop.encapsulation.demo.Encapsulation esc = new com.oop.encapsulation.demo.Encapsulation();
         esc.test();
     }
 }
