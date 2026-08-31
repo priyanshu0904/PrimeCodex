@@ -3,7 +3,7 @@ package com.oop.abstraction.interfaces;
 public interface Transport {
     //interfaces primarily declare abstract methods for implementation by classes
     //class can implement multiple interfaces, allowing flexibility, multiple inheritance, separated by comma
-    //interface keyword is used
+    //interface keyword is used, can make objects
     //interface can have default methods with implementation and static methods
     //interface methods are inherently public and abstract, expect for default and static
 

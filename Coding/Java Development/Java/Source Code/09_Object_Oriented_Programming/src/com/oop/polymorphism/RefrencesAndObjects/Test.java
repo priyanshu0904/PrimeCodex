@@ -6,7 +6,13 @@ public class Test {
         //Vehicle vehicle = new Car();
         Plane plane = new Plane();
 
+        //Upcasting -> subclass to superclass reference, automatic and safe, access only to superclass methods
+        //used for generalization in methods
         Vehicle vCar = new Car();
+        //Car newCar = new Vehicle(); //compilation error
+        vCar.start();
+        vCar.print(); //superclass methods
+        //vCar.noOfDoors(); //subclass method
         //Car cVehicle = (Car) new Vehicle();
 
         //castTest(vehicle);
@@ -14,6 +20,13 @@ public class Test {
         castTest(plane);
 
         Object ref = new Car(); //parent of all class
+
+        //Downcasting, only access subclass-specific methods
+        Vehicle newVehicle = new Car();
+        Car c = (Car)newVehicle;
+        c.start();
+        c.noOfDoors();
+        c.greet();
     }
 
     private static void castTest(Vehicle vehicle){
@@ -26,8 +39,11 @@ public class Test {
 //        cVehicle.start();
 //        cVehicle.noOfDoors();
         if(vehicle instanceof Car){
+            //Downcasting -> superclass to subclass reference, manual and risky
+            //needs instanceof check, access to subclass-specific methods
+            //use for specific subclass behaviour
             Car veh = (Car) vehicle;
-            veh.noOfDoors();
+            System.out.println(veh.noOfDoors());
             veh.start();
         }
     }

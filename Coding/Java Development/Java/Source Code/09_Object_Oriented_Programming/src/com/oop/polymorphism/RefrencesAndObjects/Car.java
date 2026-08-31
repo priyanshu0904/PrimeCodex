@@ -5,6 +5,10 @@ public class Car implements Vehicle{
         return 5;
     }
 
+    public void greet(){
+        System.out.println("Good evening ji");
+    }
+
     @Override
     public void start() {
         System.out.println("I am started");

@@ -103,3 +103,21 @@ Car.Tyre tyre = car.new Tyre(); //associated with instance of outer class
 - can have default methods with implementations and static methods
 - interface keyword is used, to inherit implements keyword is used, multiple interface allows means multiple inheritance
 - Can use extends and implements simultaneously
+
+## Polymorphism
+- Object of different classes, same method call in different ways -> flexible and reusable code, developer can write simple and readable codes by same name and different arguments
+- Compile-time -> Method, Constructor, Operator overloading
+- Run-time -> Method, Constructor overriding, subclass overrides a superclass method
+
+### References and Objects
+- Upcasting -> subclass to superclass reference, automatic and safe, access to superclass methods only, used for generalization in methods
+- Downcasting -> superclass to subclass reference, manual and risky needs instanceof check, access to subclass-specific methods only, used for specific subclass behavior
+- instanceof is used to check whether a is instanceof b or not.
+```java
+//Vehicle is parent and Car is subclass
+Vehicle veh = new Car(); //upcasting
+Car car = new Vehicle(); //compilation error
+
+Vehicle veh = new Car();
+Car car = (Car)veh; //downcasting
+```
