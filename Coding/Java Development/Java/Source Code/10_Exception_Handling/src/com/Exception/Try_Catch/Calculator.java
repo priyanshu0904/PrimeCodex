@@ -23,6 +23,9 @@ public class Calculator {
             System.out.println("Array is out of Bound");
         } catch (Throwable th){
             System.out.printf("%s", th.getMessage());
+        } finally{
+            //always prints
+            System.out.println("I am in finally block");
         }
     }
 }
