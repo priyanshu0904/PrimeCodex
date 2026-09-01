@@ -1,6 +1,8 @@
+package Problem4;
+
 import java.util.Scanner;
 
-class FloatingPointCalculator {
+public class FloatingPointCalculator {
     public static void main(String[] args) {
         System.out.println("Welcome to Floating-Point Calculator....");
         Scanner sc = new Scanner(System.in);

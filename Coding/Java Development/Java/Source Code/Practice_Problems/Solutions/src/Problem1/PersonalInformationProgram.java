@@ -1,4 +1,6 @@
-class PersonalInformationProgram {
+package Problem1;
+
+public class PersonalInformationProgram {
     public static void main(String[] args) {
         String name = "Priyanshu";
         int age = 22;

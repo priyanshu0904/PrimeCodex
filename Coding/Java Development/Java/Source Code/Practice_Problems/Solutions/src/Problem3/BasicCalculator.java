@@ -1,6 +1,8 @@
+package Problem3;
+
 import java.util.Scanner;
 
-class BasicCalculator {
+public class BasicCalculator {
     public static void main(String[] args) {
         System.out.println("Welcome to PrimeCodex Basic Integer Calculator...");
         Scanner sc = new Scanner(System.in);

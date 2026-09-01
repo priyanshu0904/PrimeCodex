@@ -1,6 +1,8 @@
+package Problem5;
+
 import java.util.Scanner;
 
-class SwapNumbers {
+public class SwapNumbers {
     public static void main(String[] args) {
         System.out.println("Welcome to Swapping Machine.....\n");
         Scanner sc = new Scanner(System.in);
