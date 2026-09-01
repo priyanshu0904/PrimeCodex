@@ -126,7 +126,7 @@ Car car = (Car)veh; //downcasting
 ### Compile-time Polymorphism
 - Method overloading, same class multiple methods with same name but different parameters list
 - Parameter must differ in number or type or sequence to distinguish them
-- Automatic type casting can occur if not exact data type match
+- Automatic type casting can occur if not exact data type match, lossless conversion if no exact match
 - return type can be different, but not alone to distinguish
 - resolved during compile time
 - Constructor overloading is same
