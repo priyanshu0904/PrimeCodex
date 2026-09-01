@@ -19,7 +19,7 @@ public class Country {
         if(countryMap.containsKey(country)){
             System.out.printf("Capital of %s is %s", country, countryMap.get(country));
         }else{
-            System.out.printf("Sorry, i couldn't find it");
+            System.out.println("Sorry, i couldn't find it");
         }
     }
 }
