@@ -6,3 +6,5 @@
 6. To debug any code or find error, you can use System.out.println(...); statement.
 7. Intellij IDEA -> Right click - Generate - Multiple options like Constructors, toString, getter setter etc.
 8. Try to learn from the error, and try to fix them.
+9. Everything or every class in java imports some things.
+10. Learn from the documentation, don't memorize them

@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class CollectionsClass {
+    //Collections class provides many built-in functions to use
     static void main(String[] args) {
         List<Integer> nums = new ArrayList<>();
         nums.add(5);
@@ -15,18 +16,19 @@ public class CollectionsClass {
         nums.add(5);
         Utility.print(nums);
 
-        Collections.sort(nums);
+        Collections.sort(nums); //to sort list
         System.out.println("After sorting: ");
         Utility.print(nums);
 
-        Collections.reverse(nums);
+        Collections.reverse(nums); //to reverse elements of list
         Utility.print(nums);
 
-        Collections.shuffle(nums);
+        Collections.shuffle(nums); //to randomly shuffle the elements of list
         Utility.print(nums);
         System.out.println(Collections.min(nums));
 
         List<Integer> unmodified = Collections.unmodifiableList(nums);
         unmodified.add(55); //throws exception
+
     }
 }
