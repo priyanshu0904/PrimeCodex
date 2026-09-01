@@ -13,6 +13,7 @@ public class Test {
         System.out.println();
 
         //run-time
+        //method call is determined by object's type at runtime
         castTest(car);
         castTest(plane);
         castTest(auto);

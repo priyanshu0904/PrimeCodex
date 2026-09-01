@@ -1,6 +1,9 @@
 package com.oop.polymorphism.Memory;
 
 public class PassByReference {
+    //objects and references
+    //java passes the reference value for objects
+    //modification to objects in method affect original
     public static void move(Point p){
         p.x++;
         p.y++;

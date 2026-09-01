@@ -6,6 +6,8 @@ public interface Transport {
     //interface keyword is used, can make objects
     //interface can have default methods with implementation and static methods
     //interface methods are inherently public and abstract, expect for default and static
+    //direct object can not be created, created through upcasting
+    //it contains can only methods not instance variables
 
     public abstract void getSetGo();
     //by default all the methods must be public abstract type in interfaces, so you can also write it as

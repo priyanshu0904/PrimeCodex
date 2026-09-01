@@ -103,6 +103,7 @@ Car.Tyre tyre = car.new Tyre(); //associated with instance of outer class
 - can have default methods with implementations and static methods
 - interface keyword is used, to inherit implements keyword is used, multiple interface allows means multiple inheritance
 - Can use extends and implements simultaneously
+- Object of abstract and interface can't be created, use upcasting
 
 ## Polymorphism
 - Object of different classes, same method call in different ways -> flexible and reusable code, developer can write simple and readable codes by same name and different arguments
@@ -111,7 +112,7 @@ Car.Tyre tyre = car.new Tyre(); //associated with instance of outer class
 
 ### References and Objects
 - Upcasting -> subclass to superclass reference, automatic and safe, access to superclass methods only, used for generalization in methods
-- Downcasting -> superclass to subclass reference, manual and risky needs instanceof check, access to subclass-specific methods only, used for specific subclass behavior
+- Downcasting -> superclass to subclass reference, manual and risky, needs instanceof check, access to subclass-specific methods only, used for specific subclass behavior
 - instanceof is used to check whether a is instanceof b or not.
 ```java
 //Vehicle is parent and Car is subclass
@@ -121,3 +122,35 @@ Car car = new Vehicle(); //compilation error
 Vehicle veh = new Car();
 Car car = (Car)veh; //downcasting
 ```
+
+### Compile-time Polymorphism
+- Method overloading, same class multiple methods with same name but different parameters list
+- Parameter must differ in number or type or sequence to distinguish them
+- Automatic type casting can occur if not exact data type match
+- return type can be different, but not alone to distinguish
+- resolved during compile time
+- Constructor overloading is same
+- Operator overloading -> + for addition and concatenation built-in, no user-defined possible
+
+### Super Keyword
+- to refer immediate parent class instance variable, method, constructor
+- in every child class, calling it's parent constructor is important if explicit constructor
+
+### Run-time Polymorphism
+- Method Overriding -> subclass redefines or overrides a method already defined in superclass
+- run-time, method call is determined by object's type at runtime
+- Overridden method can be called through a superclass reference holding a subclass object using super keyword.
+- Overridden method must have same signature(name, return type, parameter) as method in parent class.
+- access level can not be more restrictive than parent class access level
+- @Override Annotation, optional but to ensure that correctly overridden.
+- Constructor overriding is not possible
+
+### Final Keyword
+- Variable -> to create constant variable, must be initialized before constructor completes, reducing null pointer error, compiler can make certain assumptions so performance optimized
+- Method -> to prevent method overriding by subclass
+- Class -> to prevent inheritance
+- Helps in creating immutable objects in combination with private fields and no setter method
+
+### Pass by value and Pass by reference
+- Value -> default method, primitive type always do this, copies argument to parameter, original variable not affected
+- Reference -> object created, pass reference value for object, original variable affected

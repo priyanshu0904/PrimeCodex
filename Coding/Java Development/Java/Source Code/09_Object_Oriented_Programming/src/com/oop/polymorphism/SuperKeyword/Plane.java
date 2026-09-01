@@ -1,8 +1,8 @@
 package com.oop.polymorphism.SuperKeyword;
 
 public class Plane extends Vehicle{
-    Plane(int noOfTyres){
-        super(noOfTyres);
+    Plane(int noOfTyres, String name){
+        super(noOfTyres, name);
     }
 
     @Override

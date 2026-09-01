@@ -1,6 +1,7 @@
 package com.oop.polymorphism.CompileTime;
 
 public class ConstructorOverloading {
+    //same as method overloading
 
     ConstructorOverloading(){
         System.out.println("Default Constructor Called");

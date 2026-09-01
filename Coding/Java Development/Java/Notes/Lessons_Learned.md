@@ -5,3 +5,4 @@
 5. Use brackets for clarification.
 6. To debug any code or find error, you can use System.out.println(...); statement.
 7. Intellij IDEA -> Right click - Generate - Multiple options like Constructors, toString, getter setter etc.
+8. Try to learn from the error, and try to fix them.
