@@ -1,4 +1,4 @@
-package com.FunctionalProgramming.Stream;
+package com.FunctionalProgramming.Stream.Operations.Terminal;
 
 import java.util.Arrays;
 import java.util.List;

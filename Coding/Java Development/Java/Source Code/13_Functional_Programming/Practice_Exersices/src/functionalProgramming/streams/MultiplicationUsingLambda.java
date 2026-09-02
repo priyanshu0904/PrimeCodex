@@ -1,4 +1,4 @@
-package functionalProgramming;
+package functionalProgramming.streams;
 
 import java.util.function.BinaryOperator;
 

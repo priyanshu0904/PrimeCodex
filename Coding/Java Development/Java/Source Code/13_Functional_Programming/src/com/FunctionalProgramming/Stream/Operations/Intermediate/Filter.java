@@ -1,4 +1,4 @@
-package com.FunctionalProgramming.Stream;
+package com.FunctionalProgramming.Stream.Operations.Intermediate;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -31,5 +31,6 @@ public class Filter {
         fruits.stream()
                 .filter(fruit -> fruit.endsWith("a")) //returns stream
                 .forEach(fruit -> System.out.println(fruit));
+                //this is like chaining
     }
 }

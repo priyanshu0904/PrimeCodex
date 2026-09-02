@@ -8,6 +8,6 @@ public class Streams {
         List<String> fruits = List.of("Apple", "Banana", "Cherry", "Guava", "mango");
 
         Stream<String> stream = fruits.stream();
-        stream.forEach(System.out::println); //lambda function inside forEach
+        stream.forEach(str -> System.out.println(str)); //lambda function inside forEach
     }
 }
