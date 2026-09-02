@@ -25,12 +25,14 @@
     3. Queue Interface -> used for holding elements in FIFO prior to processing
 - Map Interface -> Not a true collection, but part of Collections Framework, store value in key-value pair. Keys are unique, but different keys can map same value
 
-## List Interface
+## Collection Interface
+### List Interface
 - an ordered collection (sequence), allows duplicate elements
 - elements can access by integer index, maintains insertion order of elements
 - offers fast random access and quick iteration
 - capacity grows automatically as elements are added
 - preferred over arrays when size is dynamic or unknown
+- List<Integer> nums = Array.asList(1,2,3,4,5,6,7);
 - Methods: 
     1. add(E e) - add specific element
     2. add(int index, E element) - insert at specific position
@@ -43,7 +45,7 @@
     9. contains(Object o) - returns true if list contains specified element
     10. indexOf(Object o) - return the index of first occurrence of specified element, otherwise -1 if not in list
 
-## Queue Interface
+### Queue Interface
 - collection design for holding elements prior to processing, ordering elements in FIFO manner
 - two end points: for insertion(tail) and removal(head)
 - Methods:
@@ -54,7 +56,7 @@
     5. element() - retrieves but doesn't remove the head of queue, throws exception if couldn't
     6. peek() - retrieves but doesn't remove the head of queue, return null if couldn't
 
-## Set Interface
+### Set Interface
 - doesn't allow duplicate, all unique elements
 - unordered collection, doesn't guarantee any specific ordering
 - doesn't support indexing-based access
@@ -74,3 +76,26 @@
 - unmodifiableList() - to make the collections unmodifiable
 - singletonList() - creates immutable collections with single elements
 - copy() - copy all elements from one list to another
+- frequency() - to count the frequency of specified element in list
+- Comparator - allows you to write the comparison between elements, returns 0, positive or negative
+
+## Map Interface
+- stores key-value pairs, each key can map to at most one value
+- keys are unique, multiple keys can map same value
+- part of Collections framework, but does not extend the Collection Interface
+- Method:
+    1. put(K key, V value) - associate specified value with the specified key in the map
+    2. get(Object Key) - returns the value to which the specified key is mapped, null if map contains nothing with that key
+    3. remove(Object key) - removes the mapping from the map if present, and returns associated value with it
+    4. containsKey(Object Key) - checks if map contains a mapping for specified key or not, returns true
+    5. keySet() - returns set view of keys in map
+    6. values() - returns Collection view of the values in map
+    7. size() - returns the size of the map
+
+# Enums
+- enums is a special type for fixed set of constants like days, colors
+- enum keyword is used, values are written separated by comma
+- access constants with dot operator
+- it is type-safe, readable, it can have methods and fields
+- useful in switch statements and iterating with values() method
+- can call constructor, and have to associate with all the values in enums

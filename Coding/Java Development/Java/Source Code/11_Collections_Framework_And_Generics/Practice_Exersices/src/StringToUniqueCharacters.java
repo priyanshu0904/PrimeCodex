@@ -9,7 +9,7 @@ public class StringToUniqueCharacters {
         Scanner sc = new Scanner(System.in);
         String userStr = sc.next();
 
-        for (char c : userStr.toCharArray()) {
+        for (char c : userStr.toCharArray()) { //converts the string to character array
             unique.add(c);
         }
 
