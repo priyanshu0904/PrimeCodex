@@ -5,7 +5,8 @@
 
 # Wrapper Classes and Autoboxing
 - Object ---> Number(Byte, Short, Integer, Long, Float, Double), Boolean, Character, wrapper classes
-- Can use primitive types as objects of its wrapper class, automatic conversion between them, once created can't be changed, allows to assign null values to primitive
+- Can use primitive types as objects of its wrapper class, automatic conversion between them, once created can't be changed (immutable), allows to assign null values to primitive
+- Wrapper classes can not be extended
 - Utility Methods -> compareTo, valueOf, parseInt etc
 - required to store primitives in collection objects
 - Autoboxing -> automatic conversion of primitive to its wrapper class object
@@ -77,7 +78,7 @@
 - singletonList() - creates immutable collections with single elements
 - copy() - copy all elements from one list to another
 - frequency() - to count the frequency of specified element in list
-- Comparator - allows you to write the comparison between elements, returns 0, positive or negative
+- Comparator - allows you to re-write the comparison between elements by own logic, returns 0, positive or negative
 
 ## Map Interface
 - stores key-value pairs, each key can map to at most one value
@@ -96,6 +97,18 @@
 - enums is a special type for fixed set of constants like days, colors
 - enum keyword is used, values are written separated by comma
 - access constants with dot operator
-- it is type-safe, readable, it can have methods and fields
-- useful in switch statements and iterating with values() method
+- it is type-safe, readable, it can have methods,fields, variables, constructors and implement interfaces
+- useful in switch statements and iterating with values() method, values() converts all elements of enum into array
 - can call constructor, and have to associate with all the values in enums
+
+# Generics
+- Allows us to write flexible and reusable codes by enabling types(classes and interfaces) to be parameters when defining classes, interfaces and methods.
+- Provides compile-time safety by allowing us to enforce that certain objects are of a specific type
+- With generics, no need to cast objects, because type is known
+- Denoted by angle brackets <>, eg. List<String> -> List of strings
+- This is only compile-time thing, at run-time all of them converts to objects
+
+## Diamond Operator
+- Introduced in Java 7
+- Denoted by <>, nothing inside
+- It allows to infer the type parameter from the context, means from left, simplifying instantiation of generics classes, do not need to specify the type on the right-hand side of statement when initializing an object
