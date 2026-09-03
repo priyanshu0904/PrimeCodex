@@ -13,5 +13,7 @@ public class Streams {
         stream.forEach(str -> System.out.println(str)); //lambda function inside forEach
 
         //stream source -> intermediate operations -> termination operation -> operation result
+        //Intermediate operations: lazy, set a pipeline, stream transformation, chainable, can be stateless or stateful
+        //Terminal operations: Initiates the stream processing and closes stream, after this stream can't be reused, produces result or a side-effect
     }
 }

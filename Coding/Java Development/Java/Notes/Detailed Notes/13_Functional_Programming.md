@@ -8,7 +8,7 @@
 - Statelessness
 
 ## Lambda Expression
-- These are quick, nameless functions for small tasks, like shortcuts
+- These are quick, nameless functions for small tasks, like shortcuts, implemented for only functional interface
 - Syntax: 
 ```java
 (parameters) -> {body}
@@ -65,7 +65,10 @@ list.streams()
 - returns a new stream with match the predicate
 - .filter()
 
-#### Other Filter Operations
+#### Other Intermediate Operations
+- sorted(): orders the element of a stream based on their natural order or provided comparator
+- distinct(): filters out duplicate elements, ensuring that every element in the resulting stream is unique
+- map(): applies a function to each element of a stream, transforming them into a new stream of results based on the function logic
 
 ### Terminal Operations
 - Initiates the stream processing and closes the stream, Computation trigger. After this stream can't be reused.
@@ -80,6 +83,9 @@ list.streams()
 
 #### Other Terminal Operations
 - forEach(): implement a specific function written inside it to each element of streams
+- max(): find largest element in stream according to given Comparator or natural ordering
+- min(): find smallest element in stream according to given Comparator or natural ordering
+- collect(Collectors.toList()): gathers all elements of stream into a new list
 
 ## Functional Interface
 - it have only Single abstract method(SAM), but default and static methods it can have
