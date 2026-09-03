@@ -55,6 +55,10 @@ list.streams()
 ```
 
 ### Intermediate Operations
+- Executed only when terminal operation is invoked, lazy, setting up a pipeline without processing data
+- Transform one stream to another, filter, map. Chainable, allowing multiple transformation
+- State handling, can be stateless(map) or stateful(sorted) affecting processing
+
 #### Filter
 - Filter elements of stream based on given predicate.Only elements satisfy the condition are included in resulting stream.
 - Lazy operation, it is not executed until a terminal operation is invoked on the stream.
@@ -64,6 +68,9 @@ list.streams()
 #### Other Filter Operations
 
 ### Terminal Operations
+- Initiates the stream processing and closes the stream, Computation trigger. After this stream can't be reused.
+- Produces a result or a side-effect. Non-chainable
+- collect(), forEach(), reduce(), sum(), min(), max(), count()
 #### Reduce
 - Reduce the elements of a stream to a single value
 - Takes binary operator as parameter and applies repeatedly, combining the elements of stream
@@ -123,3 +130,22 @@ ClassName::new;
 - Optimization: You can easily optimize code because an algorithm controls the implementation. Furthermore, you can add extensions and make upgrades.
 - Structure: The code structure is concise and precise, and it lacks detail.
 
+# Optional Class
+- Used to handle NullPointerException
+- Values of operation can be a value or can be null
+- Creating Optional Object:
+    - Optional.empty()
+    - Optional.of()
+    - Optional.ofNullable
+- Checking value presence:
+    - isPresent()
+    - ifPresent()
+- Default values:
+    - orElse()
+    - orElseGet()
+- Value Transformation
+    - map()
+- Throwing Exception
+    - orElseThrow()
+
+- IntStream.rangeClosed()
