@@ -1,7 +1,7 @@
 package com.Multithreading.ThreadPriority;
 
 public class PrintTask implements Runnable{
-    //creating thread
+    //creating class for thread
 
     @Override
     public void run() {

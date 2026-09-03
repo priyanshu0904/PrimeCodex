@@ -8,6 +8,7 @@ import java.util.concurrent.Executors;
 
 public class SingleThreadExecutor {
     static void main(String[] args) {
+        //ExecutorService Framework, no need to manually manage threads
         ExecutorService service = Executors.newSingleThreadExecutor();
 
         PrintTask task1 = new PrintTask('*');

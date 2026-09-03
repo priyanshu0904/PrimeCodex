@@ -1,7 +1,7 @@
 package com.Multithreading.JoinMethod;
 
 public class PrintTask implements Runnable{
-    //creating a thread
+    //creating a class for thread
 
     @Override
     public void run() {

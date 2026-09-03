@@ -6,7 +6,9 @@ import java.util.concurrent.TimeUnit;
 
 public class MultipleThreads {
     static void main(String[] args) throws InterruptedException {
+        //All the tasks are managed by this by making a thread pool
         ExecutorService service = Executors.newFixedThreadPool(3);
+        //All the tasks are managed by specified number of threads
 
         PrintTask task1 = new PrintTask('*');
         PrintTask task2 = new PrintTask('$');
@@ -24,13 +26,13 @@ public class MultipleThreads {
         service.submit(task6);
         service.submit(task7);
 
-        service.shutdown();
+        service.shutdown(); //to shut down after all task completed
         System.out.println("\n*******************1");
 
-        //to finish the tasks in the bounded time
+        //to finish the tasks in the bounded time, if not then explicitly shutdow before full execution
         if (!(service.awaitTermination(10, TimeUnit.SECONDS))){
             System.out.println("\n*******************2");
-            service.shutdownNow(); //otherwise terminate that
+            service.shutdownNow(); //otherwise stops all active tasks
         }
     }
 }

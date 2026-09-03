@@ -99,3 +99,20 @@ new Thread(t1).start();
 - currentThread(): Specifies current Thread
 - currentThread().getName(): Gives name of current thread
 
+# Executor Service
+- ExecutorService is a framework provided by Java Concurrency API to manage and execute submitted tasks without thr need to manually manage thread life cycles.
+- Thread Pool Management -> ExecutorService uses fixed pool of threads to execute tasks, improves performance, no need to create thread manually, especially for short-lived asynchronous tasks
+- Application(Runnables) ---> {ThreadPoolExecutor: Task Queue(for tasks), Thread Pool(Specific number of threads executing those tasks)}
+- Define a class using Runnable for execution
+
+## Single Thread with Executor
+- ExecutorService service = Executors.newSingleThreadExecutor(); -> to make a single thread executor
+    - service.submit(task): to submit a task
+    - service.shutdown(): to stop the service
+
+## Multiple Threads with Executor
+- ExecutorService service = Executors.newFixedThreadPool(int number); -> to make specified number of threads executor
+    - service.submit(task): to submit a task
+    - service.shutdown(): to stop service after complete execution of all tasks
+    - service.awaitTermination(int time, TimeUnit.SECONDS): wait for all the tasks to complete within this time, if not then 
+        - service.shutdownNow(): immediately stops all active tasks before execution
