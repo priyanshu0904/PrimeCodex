@@ -1,11 +1,14 @@
 package com.FunctionalProgramming.LambdaExpression;
 
 public class Lambda {
+    //shortcuts to write functions, makes code shorter
     static void main(String[] args) {
         Lambda test = new Lambda();
         System.out.println("Sum is: " + test.sun(5,8));
         test.printString("Hello Priyanshu");
 
+        //syntax: (parameters) -> {body}
+        //Functional Interface, only have one method
         //Lambda expressions
 //        () -> System.out.println("Hello");
 //
