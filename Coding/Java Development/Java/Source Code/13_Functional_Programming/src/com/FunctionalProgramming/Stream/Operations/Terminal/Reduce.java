@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.function.BinaryOperator;
 
 public class Reduce {
+    //terminal operation
     static void main(String[] args) {
         List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,9);
         int sum = 0;
@@ -23,7 +24,8 @@ public class Reduce {
         System.out.printf("Sum using reduce is %d\n", newSum);
 
         int add = list.stream()
-                .reduce(0, (a,b) -> a+b);
+                .reduce(0, (a,b) -> a+b); //takes binary operator, applies the task repeatedly and returns a single value
+        //Optional or Default Value returns
         System.out.printf("Sum using lambda and reduce is %d\n", add);
 
         int max = list.stream()

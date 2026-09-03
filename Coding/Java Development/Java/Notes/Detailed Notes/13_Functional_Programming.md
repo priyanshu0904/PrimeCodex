@@ -38,4 +38,64 @@ s -> System.out.println(s);
 - Great for managing lists and sets, like filtering and sorting, useful in collections.
 
 ## Streams
-- 
+- Represents a sequence of elements
+- Functional Operations like map, filter and reduce
+- They don't store data, they process it on-the-fly from sources like collections and arrays
+- Stream operations can be lazy, processing elements only as needed, which is efficient for large data
+- Streams are consumable, once processed, they can't be used 
+- They support parallel processing, making operations faster by utilizing multiple threads automatically
+- stream source -> intermediate operations -> termination operation -> operation result
+```java
+list.streams()
+    .filter()
+    .map()
+    .sort()
+    .forEach();
+//chaining of operations on stream
+```
+
+### Intermediate Operations
+#### Filter
+- Filter elements of stream based on given predicate.Only elements satisfy the condition are included in resulting stream.
+- Lazy operation, it is not executed until a terminal operation is invoked on the stream.
+- returns a new stream with match the predicate
+- .filter()
+
+#### Other Filter Operations
+
+### Terminal Operations
+#### Reduce
+- Reduce the elements of a stream to a single value
+- Takes binary operator as parameter and applies repeatedly, combining the elements of stream
+- Versatile: Used for summing, finding, max, min and combining elements in a myriad of ways
+- Optional or default value: Without an identity value, it returns an Optional. With an identity value, it returns a default value if stream is empty.
+- .reduce() 
+
+#### Other Terminal Operations
+- forEach(): implement a specific function written inside it to each element of streams
+
+## Functional Interface
+- it have only Single abstract method(SAM), but default and static methods it can have
+- Lambda capability, intended to be used with lambda expressions, providing a target type for lambda and method references
+- @FunctionalInetrface Annotation, not mandatory, helps compiler to identify intention of making functional interface if not satisfy then can generate error
+- Predicate, Consumer, BinaryOperator, Runnable, Callable, Comparator and user-defined interface if only one abstract method
+
+## Method Reference
+- Described using (::) double colon. like System.out::println, refers to the println method of the System.out object
+- They are used with functional interfaces.
+- Can make code more readable and concise
+- Can only used for methods that fit parameters and return type
+- Synatx
+```java
+//Static method reference
+ClassName::staticMethodName;
+
+//Instance Method
+instance::instanceMethodName;
+
+//Instance Method Particular Class
+ClassName::methodName;
+
+//Constructor Reference
+ClassName::new;
+```

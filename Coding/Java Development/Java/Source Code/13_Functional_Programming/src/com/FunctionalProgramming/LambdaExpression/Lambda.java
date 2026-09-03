@@ -1,5 +1,7 @@
 package com.FunctionalProgramming.LambdaExpression;
 
+import java.util.List;
+
 public class Lambda {
     //shortcuts to write functions, makes code shorter
     static void main(String[] args) {
@@ -25,6 +27,12 @@ public class Lambda {
 //            System.out.println(sum);
 //            return sum;
 //        }
+
+        List<String> list = List.of("Priyanshu", "Raj", "Gupta");
+        List<String> newList = list.stream()
+                .filter(str -> str.endsWith("u")) //Lambda function
+                .toList();
+        System.out.println(newList);
     }
 
     private void printString(String toPrint){
