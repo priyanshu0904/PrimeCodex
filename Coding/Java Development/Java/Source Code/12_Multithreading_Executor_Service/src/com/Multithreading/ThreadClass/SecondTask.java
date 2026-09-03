@@ -1,6 +1,8 @@
 package com.Multithreading.ThreadClass;
 
 public class SecondTask extends Thread{
+    //creating another thread
+
     @Override
     public void run() {
         for (int i = 1; i <= 1000; i++) {

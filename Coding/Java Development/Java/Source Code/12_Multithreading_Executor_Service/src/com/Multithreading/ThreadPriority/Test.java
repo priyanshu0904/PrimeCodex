@@ -7,12 +7,16 @@ public class Test {
         PrintTask p3 = new PrintTask('#');
 
         //p1.start(); //in Runnable interface there is only one method, run()
+        //start() is the property of thread
 
         long start = System.currentTimeMillis();
 
+        //priority levels from 1-10(Highest), default = 5
+        //it only suggests the importance level of thread, not guaranteed the order of execution is same
         Thread t1 = new Thread(p1);
-        t1.setPriority(Thread.MIN_PRIORITY);
+        t1.setPriority(Thread.MIN_PRIORITY); //method to set priority level
         t1.start();
+        System.out.println(t1.getPriority()); //method to get priority of thread
         Thread t2 = new Thread(p2);
         t2.setPriority(Thread.NORM_PRIORITY);
         //t2.setPriority(5);

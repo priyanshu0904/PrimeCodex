@@ -1,7 +1,9 @@
 package com.Multithreading.RunnableInterface;
 
 public class PrintTask implements Runnable{
+    //using Runnable interface to creating a thread
 
+    //override run method
     @Override
     public void run() {
         for (int i = 1; i <= 1000; i++) {

@@ -24,6 +24,8 @@ public class Test {
         long end = System.currentTimeMillis();
         System.out.printf("Final counter value is %d and time taken is %d ms\n", counter.getCount(), (end - start));
 
+        System.out.println("Thread with synchronized method");
+
         long startTime = System.currentTimeMillis();
         CounterWithSynchronized ctr = new CounterWithSynchronized();
         NewUpdaterThread t3 = new NewUpdaterThread(ctr);

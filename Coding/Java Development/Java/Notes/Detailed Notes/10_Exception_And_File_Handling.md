@@ -36,6 +36,7 @@
 - throws keyword: declare that method may throw one or more exception, used in method signature to indicate that method might throw exception of specific types, throws declared method requires the calling method to handle or further declare the exception, checked exceptions can propagate with throws, syntax throws is followed by class name(throws IOException, SQLException), can declare multiple exceptions
 - throw keyword: used to explicitly throw exception from any method, can either create new instance of exception or an existing object using throw to throw the exception, cannot propagate checked exception, throw is followed by instanceof Exception class(throw new NumberFormatException), throw used inside method body only, can throw only one exception
 - The method throws exception to it's calling method, and so on till main method
+- Overridden methods can't throw any exception, because it's parent doesn't
 
 ## Finally block
 - executes after try-catch blocks, used for cleanup operations mainly

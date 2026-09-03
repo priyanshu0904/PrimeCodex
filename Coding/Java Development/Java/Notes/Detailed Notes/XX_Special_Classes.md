@@ -26,3 +26,6 @@
 ## Scanner Class
 
 ## System Class
+- in -> input
+- out -> output
+- currentTimeMillis() -> Current time in ms
