@@ -13,6 +13,7 @@ public class Futures {
         FetchName name3 = new FetchName("Priya");
         FetchName name4 = new FetchName("Alok");
 
+        //save the result in a Future variable
         Future<String> pr1 = service.submit(name1);
         Future<String> pr2 = service.submit(name2);
         Future<String> pr3 = service.submit(name3);

@@ -14,7 +14,7 @@ public class Test {
             }
             service.shutdown();
 
-            if(!service.awaitTermination(15, TimeUnit.SECONDS)){
+            if(!service.awaitTermination(5, TimeUnit.SECONDS)){
                 System.out.println("EMERGENCY SHUTDOWN");
                 service.shutdownNow();
             }

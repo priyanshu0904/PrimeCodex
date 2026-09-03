@@ -18,7 +18,7 @@ public class Test {
             }
             service.shutdown();
 
-            if(!service.awaitTermination(10, TimeUnit.SECONDS)){
+            if(!service.awaitTermination(1, TimeUnit.SECONDS)){
                 System.out.println("\nTERMINATED");
                 service.shutdownNow();
             }

@@ -12,7 +12,7 @@ public class Factorial implements Callable<Integer> {
 
     @Override
     public Integer call() throws Exception {
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         if(number <= 1){
             return number;
         }

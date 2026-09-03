@@ -5,6 +5,7 @@
 - Use for tasks that can happen at same time, managing many requests or splitting a big job
 - Threads can talk to each other using wait(), notify() and notifyAll() to coordinate their work.
 - Thread Scheduler is used to schedule threads to CPU
+- main Thread automatically created by JVM when program starts
 
 # Multithreading
 ## Need of Multithreading
@@ -28,6 +29,7 @@
 new Thread(t1).start();
 ```
 - Rest is similar
+- run() is automatically called when thread calls start()
 
 ## States of a Thread
 ```text
@@ -104,6 +106,7 @@ new Thread(t1).start();
 - Thread Pool Management -> ExecutorService uses fixed pool of threads to execute tasks, improves performance, no need to create thread manually, especially for short-lived asynchronous tasks
 - Application(Runnables) ---> {ThreadPoolExecutor: Task Queue(for tasks), Thread Pool(Specific number of threads executing those tasks)}
 - Define a class using Runnable for execution
+- ExecutorService must be explicitly shutdown to terminate the threads it manages
 
 ## Single Thread with Executor
 - ExecutorService service = Executors.newSingleThreadExecutor(); -> to make a single thread executor
@@ -116,3 +119,9 @@ new Thread(t1).start();
     - service.shutdown(): to stop service after complete execution of all tasks
     - service.awaitTermination(int time, TimeUnit.SECONDS): wait for all the tasks to complete within this time, if not then 
         - service.shutdownNow(): immediately stops all active tasks before execution
+
+## Returning Futures
+- Create a class with implements Callable<T>
+- Then same as above, use ExecutorService and submit task
+- Have to override call() method
+- service.submit(task), returns a value, save it in Future<T> variable, means it's value will come in future from the thread, to access from future variable -> get() method
