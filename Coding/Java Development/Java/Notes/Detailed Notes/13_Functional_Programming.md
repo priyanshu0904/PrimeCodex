@@ -99,3 +99,27 @@ ClassName::methodName;
 //Constructor Reference
 ClassName::new;
 ```
+# Programming Paradigms
+- Imperative Programming:
+    1. Procedural Programming
+    2. Structured Programming
+    3. Object-Oriented Programming
+- Declarative Programming:
+    1. Functional Programming
+    2. Logic Programming
+
+# Functional vs Structural Programming
+## Imperative or Structural Programming
+- Computation: You describe the step-by-step instructions for how an executed program achieves the desired results.
+- Readability and Complexity: With the emphasis on the control flow, you can often follow the step-by-step process fairly easily. However, as you add more code, it can become longer and more complex
+- Customization: A straightforward way to customize and edit code and structure is offered. You have complete control and can easily adapt the structure of your program to your needs.
+- Optimization: Adding extensions and making upgrades are supported, but doing so is significantly more challenging than with declarative programming, making it harder to optimize.
+- Structure: The code structure can be long and complex. The code itself specifies how it should run and in what order. 
+
+## Declarative or Functional Programming
+- Computation: You set the conditions that trigger the program execution to produce the desired results.
+- Readability and Complexity: Step-by-step processes are eschewed. You’ll discover that this paradigm is less complex and requires less code, making it easier to read.
+- Customization: Customizing the source code is more difficult because of complicated syntax and the paradigm’s dependence on implementing a pre-configured algorithm.
+- Optimization: You can easily optimize code because an algorithm controls the implementation. Furthermore, you can add extensions and make upgrades.
+- Structure: The code structure is concise and precise, and it lacks detail.
+
