@@ -1,3 +1,5 @@
+package com.DataTypes;
+
 public class DataTypes {
     public static void main(String[] args){
         //everything has a binary value like character, emojis everything

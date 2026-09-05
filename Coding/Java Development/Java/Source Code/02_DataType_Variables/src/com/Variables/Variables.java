@@ -1,3 +1,5 @@
+package com.Variables;
+
 public class Variables {
     public static void main(String[] args) {
         //data_type variable_name = value / literals;
