@@ -1,3 +1,5 @@
+package com.javaBasics;
+
 public class Patterns {
     public static void main(String[] args){
         //Left half upward pyramid

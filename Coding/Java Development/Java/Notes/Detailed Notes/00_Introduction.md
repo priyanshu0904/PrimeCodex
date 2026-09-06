@@ -2,7 +2,7 @@
 ## About Java
 - One of the popular language runs across 60,00,00,00,000 devices.
 - Wide usage - Web apps, Backend, Mobile apps, Enterprise software.
-- Object Oriented
+- Object Oriented and High-level Language
 - Rich API and Community Support.
 
 ## Programming Language

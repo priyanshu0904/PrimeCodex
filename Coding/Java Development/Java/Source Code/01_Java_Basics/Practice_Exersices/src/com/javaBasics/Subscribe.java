@@ -1,3 +1,5 @@
+package com.javaBasics;
+
 import java.lang.*;
 public class Subscribe {
     public static void main(String[] args){

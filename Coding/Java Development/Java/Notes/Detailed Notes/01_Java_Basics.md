@@ -1,11 +1,13 @@
 # Java Basics
 - Java JDK (Java Development Kit) -> Oracle
+- Java SE(Standard Edition), EE(Jakarta, Enterprise Edition), ME(Micro Edition) and LTS is Long-term Support version
 - **Program.java** -> java compiler (javac) -> **Program.class** (bytecode) -> JVM (java) (of each machine) -> Output in 0/1 form, Machine code as per machine specifications.
 - javac -> Compilation to bytecode and checks all errors, responsible for syntax only
 - From Program.java -> Program.class is compilation.
 - From Program.class -> 0/1 form is Interpretation.
 - Ignores Whitespaces
 - Java creates many VMs for security.
+- Java ignores spaces, in string it considers.
 ```shell
 C://.......>java -version 
 C://.......>javac -version
@@ -58,14 +60,14 @@ public class Main{
 ## Showing Output
 ```java
 System.out.print();
-System.out.println();
+System.out.println(); //adds new line after statement
 ```
 
 ## main() Method
 ```java
 public static void main(String[] args)
 ```
-- Structure is fixed, used by JVM directly.
+- Structure/signature is fixed, used by JVM directly.
 - Entry point for execution by JVM.
 - Must be public and static for accessible by JVM without creating object
 - If you don't write main method so compiler compiles it as there is no syntax error but the JVM gives an error.

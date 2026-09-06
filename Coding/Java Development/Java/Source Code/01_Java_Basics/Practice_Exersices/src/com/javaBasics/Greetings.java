@@ -1,3 +1,5 @@
+package com.javaBasics;
+
 import java.lang.*;
 public class Greetings {
     public static void main(String[] args){
