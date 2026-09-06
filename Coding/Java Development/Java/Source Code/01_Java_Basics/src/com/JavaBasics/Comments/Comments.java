@@ -9,17 +9,20 @@ public class Comments {
      * Java Docs Comment.
      * This is used for methods or class documentation.
      * @param args
-     * @return return
+     * @return void
+     * @author Priyanshu
      */
     public static void main(String[] args) {
-        //This is a single line comment.
+        //This is a single line comment., Ctrl + /
 
-        /*
-        This is multi-line
+        /*This is multi-line
         Comment.
-         */
+        Ctrl + Shift + /*/
 
+        //declaring variable
         int a = 5;
+
+        //printing hello world
 
         System.out.println("Hello World!!!!");
     }
