@@ -1,8 +1,7 @@
-package com.Introduction;
+package com.introduction;
 
-public class HelloJava {
+public class Welcome {
     public static void main(String[] args) {
-        System.out.println("Hello Java - The Great!");
         System.out.println("Welcome to Java Development");
     }
 }
