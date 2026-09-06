@@ -142,7 +142,7 @@ ClassName::new;
 - Creating Optional Object:
     - Optional.empty()
     - Optional.of()
-    - Optional.ofNullable
+    - Optional.ofNullable()
 - Checking value presence:
     - isPresent()
     - ifPresent()
