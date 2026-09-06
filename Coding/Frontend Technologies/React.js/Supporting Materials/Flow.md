@@ -1,3 +1,4 @@
+```text
 ⚛️ React Prerequisites (Modern JS, JSX & Tooling Basics)
 
         ↓
@@ -103,3 +104,4 @@
         ↓
 
 🏭 Production React Engineering (CI/CD, Monitoring, Error Tracking with Sentry)
+```

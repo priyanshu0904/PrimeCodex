@@ -1,7 +1,7 @@
 import java.lang.*; //by default imported
 //Use Intellij IDEA IDE
 
-//Java is a high level language, object oriented, rich APIs and community support
+//Java is a high level language, object-oriented, rich APIs and community support
 //computer -> 0/1 or ON/OFF
 //giving instructions, tell computer what to do, code, HLL
 //compiler -> HLL ---> LLL
