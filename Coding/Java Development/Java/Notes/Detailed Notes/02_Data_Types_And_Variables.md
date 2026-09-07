@@ -127,6 +127,7 @@ Conventions are not rules but just used for better code visibility and understan
 - Automatic, Widening, Implicit, Coercion
 - byte -> short -> int -> long -> float -> double and char -> int
 - eg: float dec = 3; // output of dec = 3.0
+- During evaluating expression, variables can be implicitly casted to result type.
 ### 2. Explicit Conversion
 - Store larger to smaller data type forcefully -> data may loss
 - Narrowing, Explicit, Casting

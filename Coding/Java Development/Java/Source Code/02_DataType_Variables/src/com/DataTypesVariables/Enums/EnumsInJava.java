@@ -16,7 +16,7 @@ public class EnumsInJava {
         State s1 = State.ON;
         State s2 = State.OFF;
 
-        //Methods
+        //Methods of enums
         //name()
         System.out.println("Name of s1: " + s1.name()); //name associated with d1
 
@@ -28,7 +28,7 @@ public class EnumsInJava {
         System.out.println("Value of ON is " + s3);
 
         //ordinal()
-        System.out.println(s1.ordinal());
+        System.out.println(s1.ordinal()); //gives index of the value in enum array
         System.out.println(s3.ordinal());
     }
 }

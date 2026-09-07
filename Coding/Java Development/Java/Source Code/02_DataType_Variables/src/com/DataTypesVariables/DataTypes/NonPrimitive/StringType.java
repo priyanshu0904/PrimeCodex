@@ -2,6 +2,7 @@ package com.DataTypesVariables.DataTypes.NonPrimitive;
 
 public class StringType {
     public static void main(String[] args) {
+        //ways to initialize String
         String name = "Priyanshu Raj";
 
         String greeting = new String("Hello, World!!");
