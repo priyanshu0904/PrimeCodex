@@ -1,18 +1,40 @@
 # Variables
+- Like containers used to store data values
+- Memory block where data stored, referred as variable name and have a unique address
 ```java
+//declaration
+data_type variable_name;
+
+//initialization
+variable_name = value;
+
+//declaration and initialization
 data_type variable_name = value/literals;
 ```
 - Can be consider as label
 - Stored in memory cells or locations
 
-## Data Types
+## Strongly Typed Programming Language
+- Statically typed, languages that required to specify the type of data to store. Like Java, C, C++ etc
+## Loosely Typed Programming Language
+- Dynamically typed, languages that do not require to specify the type of data to store. Like Python
+
+# Data Types
+- What type of values can be store in particular variable
 - data_type(default size, default value)
 - Primitive Data Type :-
-	1. Boolean : boolean(1 byte, false)
+	1. Boolean : boolean(1 byte, false): true, false
 	2. Numeric : 
-		i. Character : char(2 byte, '\u0000')
-		ii. Integral : Integer : byte(1 byte, 0), short(2 byte, 0), int(4 byte, 0), long(8 byte, 0L) and Floating-Point : float(4 byte, 0.0f), double(8 byte, 0.0d)
-- Non-Primitive Data Type :- String, Array, Object etc.
+		i. Character : char(2 byte, '\u0000'): 'a' must be between single quotes, can be used unicode characters like '\u0098'.
+		ii. Integral : Integer : byte(1 byte, 0), short(2 byte, 0), int(4 byte, 0), long(8 byte, 0L)
+		- When to use:
+			- byte: when to save memory in large data structures and arrays, saving memory is significant and values are known in byte's range
+			- short: to save memory, when using system or library that requires 16-bit data
+			- int: default choice, used for most mathematical operation
+			- long: when values are much larger than of int range
+		iii. Floating-Point : float(4 byte, 0.0f): 7 precision digits, double(8 byte, 0.0d):16 precision. By default every decimal value is double.
+- Non-Primitive Data Type :- String, Array, Interface, Class, Object etc.
+- '_' underscore can be placed between digits to enhance reading. Like 32_768 -> Consider as 32768, must be between two digits, like _32_678, 32_444_ , 32_456_L, 350_480._77 etc is invalid
 
 ## Naming Conventions
 Conventions are not rules but just used for better code visibility and understandability.
@@ -23,21 +45,46 @@ Conventions are not rules but just used for better code visibility and understan
 - isMarried, myAge etc.
 
 ## Identifiers
-- A-Z, a-z, 0-9, '_' , '$'
-- Can't use keywords.
+- Characters allowed: A-Z, a-z, 0-9, '_' , '$'
+- Can't use keywords or reserved words.
 - Can't start with digit like 1name
+- Length should be medium and must be descriptive
 - Case sensitive.
 - Variable name, method name, class name etc.
+- Can use predefined class and interface name like Integer, Double, String, Runnable etc but not recommended.
+- No limit of length, but preferred to be short/medium and descriptive
 
 ## Literals
 - The value associated with the variable.
-- Integer literals, floating-point, boolean, character, String, Long, double etc.
+- Integer literals(10, -8, 0)
+- Floating-point literals(1.22, 8.9, -2.8887)
+- Boolean literals(true, false)
+- Character literals('a', 'Y', '\u0078')
+- String literals("Priyanshu", "hi", "")
+- Long, double etc.
 
+# Reserved Words
 ## Keywords
+- Only in lower case letters
+- There is new keyword but not delete, can allocate memory yourself, but deletion done by Java Garbage Collector.
+### Used Keywords
+- Keywords for data types: byte, short, int, long, float, double, boolean, char
+- Keywords for flow control: if, else, switch, case, default, while, do, for, break, continue, return
+- Modifiers: public, private, protected, static, final, abstract, synchronized, native, strictfp(1.2 version), transient, volatile, sealed(Java 15), var(Java 10), non-sealed(Java 17), record(Java 16)
+- Keywords for exception handling: try, catch, throw, throws, assert(1.4 version)
+- Object and class related keywords: new, instanceof, super, this, class, interface, extends, implements, import
+- Return type keywords: void
+- Group definition keywords: enum(1.5 version)
 - These are reserved words by Java, some of these are not in use: 
 abstract, assert, boolean, break, byte, case, catch, char, class, const, continue, default, do, double, else, enum, exports, extends, final, finally, float, for, goto, if, implements, impact, import, instanceof, int, interface, long, module, native, new, package, private, protected, public, requires, return, short, static, strictfp, super, switch, synchronized, this, throw, throws, transient, try, var, void, volatile, while, _
+### Unused Keywords
+- goto, const
+
+## Reserved Literal
+- true, false, null
 
 ## Escape Sequences
+- Where the escape sequence is written in text, the operation is applied at that point...
 - \n - new line
 - \t - tab space
 - \b - backspace
@@ -45,14 +92,13 @@ abstract, assert, boolean, break, byte, case, catch, char, class, const, continu
 - \\" - double quote
 - \\\ - backslash
 
-
-## User Input
+# User Input
 - import java.util.Scanner;
-- Scanner sc = new Scanner(System.in); //Object of Scanner class
-- nextInt(), nextDouble(), nextFloat(), nextLong(), nextShort(), nextLine() -> String etc
+- Scanner sc = new Scanner(System.in); //Object of Scanner class, to take input from console
+- nextInt() -> Integer, nextDouble() -> Double, nextFloat() -> Float, nextLong() -> Long, nextShort() -> Short, nextLine() -> String etc.
 - next(); -> It stops after first whitespace -> used for single word or token
 
-## Type Conversion and Casting
+# Type Conversion and Casting
 ### 1. Implicit Conversion
 - Store smaller to larger data type -> No data loss
 - Automatic, Widening, Implicit, Coercion
@@ -64,3 +110,10 @@ abstract, assert, boolean, break, byte, case, catch, char, class, const, continu
 - byte <- short <- int <- long <- float <- double
 - eg: int myInt = (int) 3.4f;
 - (in the bracket the desired datatype is written in which you want to convert this value).
+
+# Enums
+- Methods:
+	- name():
+	- values():
+	- valueOf():
+	- ordinal():
