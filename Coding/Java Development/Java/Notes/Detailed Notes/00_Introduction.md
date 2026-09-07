@@ -1,8 +1,8 @@
 # Introduction
 ## About Java
 - One of the popular language runs across 60,00,00,00,000 devices.
-- Wide usage - Web apps, Backend, Mobile apps, Enterprise software.
-- Object Oriented and High-level Language
+- Wide usage - Web apps, Backend, Mobile apps(Android), Enterprise software, Desktop Apps
+- Object Oriented and High-level programming language
 - Rich API and Community Support.
 
 ## Programming Language
@@ -25,9 +25,9 @@
 
 ## ByteCode
 - ByteCode -> Platform Independent, not human understandable, not machine code.
-- Java compiler: Source code to Bytecode and JVM (individual machine): Bytecode to machine code and starts execution (interpreter)
+- Java compiler(javac): Source code to Bytecode and JVM (individual machine): Bytecode to machine code and starts execution (interpreter)
 - Bytecode must not be changed.
 - It provides security because it runs on Virtual Machine. Java changed the internet
 
 ## Buzzwords
-- Robust, Multithreaded, Architecture neutral, Interpreted and high performance, Distributed, Simple, Object-oriented, Secure, Portable, Dynamic.
+- Robust, Multithreaded, Architecture neutral, Interpreted and high performance, Distributed, Simple, Object-oriented, Secure, Portable, Dynamic, Platform independent, Case-sensitive

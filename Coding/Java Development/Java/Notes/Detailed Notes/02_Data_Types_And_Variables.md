@@ -2,6 +2,7 @@
 ```java
 data_type variable_name = value/literals;
 ```
+- Can be consider as label
 - Stored in memory cells or locations
 
 ## Data Types

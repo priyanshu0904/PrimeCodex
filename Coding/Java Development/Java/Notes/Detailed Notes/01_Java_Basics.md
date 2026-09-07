@@ -1,9 +1,10 @@
 # Java Basics
 - Java JDK (Java Development Kit) -> Oracle
-- Java SE(Standard Edition), EE(Jakarta, Enterprise Edition), ME(Micro Edition) and LTS is Long-term Support version
-- **Program.java** -> java compiler (javac) -> **Program.class** (bytecode) -> JVM (java) (of each machine) -> Output in 0/1 form, Machine code as per machine specifications.
+- Java SE(Standard Edition), EE(Jakarta, Enterprise Edition), ME(Micro Edition) and LTS is Long-term Support version(preferred)
+- LTS versions: Stability over features, Long term support, Reduced frequency for upgrade
+- **Program.java** -> java compiler (javac) -> **Program.class** (bytecode) (Platform independent) -> JVM (java) (of each individual machine) -> Output in 0/1 form, Machine code as per machine specifications.
 - javac -> Compilation to bytecode and checks all errors, responsible for syntax only
-- From Program.java -> Program.class is compilation.
+- From Program.java -> Program.class is compilation process. (HLL -> Machine code or LLL), software is Compiler
 - From Program.class -> 0/1 form is Interpretation.
 - Ignores Whitespaces
 - Java creates many VMs for security.
@@ -15,10 +16,12 @@ C://.......>javac -version
 
 ```
 *Steps to run a Java program:*
-source code -> Main.java //compilation
-to bytecode -> javac Main.java //running
-to execute bytecode -> java Main //JVM
+source code -> Main.java 
+to bytecode -> javac Main.java //compilation -> Main.class
+to execute bytecode -> java Main //JVM and execution
 then got output in console/terminal
+
+//Source file mode---> java Main.java ---> One-step process (Java 21 and finalize in Java 25)
 
 cat Main.java -> to see content inside Main
 ```
@@ -35,8 +38,22 @@ public class Main{
 
 ## Anatomy
 - First Letter of class -> Capital
-- The class name must be same as file name.
-- Only one public class in one file and name same as File name. Other non-public classes can be created.
+- The public class name must be same as file name.
+- At-most one public class in one file and named same as File name.It is not necessary to always have public class.
+- Other non-public classes can be created in one file and no need to match with file name. Package-private access by default.
+- Can run the non-public class having main method using Class name.
+```java
+//File name must be Public
+class NonPublic{
+  main(); //main 1
+}
+
+public class Public{
+  main(); //main 2
+}
+//When compiled two .class files have created, NonPublic.class and Public.class, .class created of the all class names not of source file name
+//To run NonPublic -> java NonPublic(main 1 executes) and to run Public -> java Public (main 2 executes)
+```
 
 ## File Extensions
 ### 1. .java
@@ -53,9 +70,9 @@ public class Main{
 - A human can't understand it
 
 ## JDK vs JRE vs JVM
-- JDK :- Used for development
-- JRE :- Used to run applications
-- JVM :- Executes Bytecode
+- JDK :- Used for development of application, JRE + development tools
+- JRE :- Used to run applications, JVM + Class package + running libraries
+- JVM :- Executes Bytecode, platform independent, runtime engine, write once and any device can work
 
 ## Showing Output
 ```java
@@ -67,6 +84,7 @@ System.out.println(); //adds new line after statement
 ```java
 public static void main(String[] args)
 ```
+- main() method is used to run any class either public or anything.
 - Structure/signature is fixed, used by JVM directly.
 - Entry point for execution by JVM.
 - Must be public and static for accessible by JVM without creating object
@@ -77,7 +95,7 @@ public static void main(String[] args)
 - Coding, finding, problems and testing...
 - It streamlines development, increase productivity and efficiency, simplifies complex tasks, unified workspace.
 - Code autocomplete, syntax highlighting, version control, error checking.
-- We use Intellij IDEA by JetBrains community version.
+- We use Intellij IDEA by JetBrains community edition.
 - Do refactor -> rename to reflect the change everywhere.
 
 ## Comments
