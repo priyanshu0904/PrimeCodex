@@ -6,7 +6,7 @@ class FirstProgram {
     }
 }
 
-class SecondProgram { //any number of default classes
+class SecondProgram { //any number of default or non-public classes
     public static void main(String[] args) {
         System.out.println("Second Program");
     }
@@ -28,7 +28,7 @@ public class HelloJava { //public class name matches the file name
 //    }
 //}
 
-//public class FirstProgram { //not same name
+//public class FirstProgram { //not same name class can be created again
 //    public static void main(String[] args) {
 //        System.out.println("Hello Java - The Great!");
 //        System.out.println("Welcome to Java Development");

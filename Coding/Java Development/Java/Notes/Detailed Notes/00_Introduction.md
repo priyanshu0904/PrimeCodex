@@ -19,7 +19,7 @@
 - Write Once, Run Anywhere :- Principle of Java, Platform Independent
 - Backward Compatibility -> New versions can run in older one -> Coffee mug logo related
 - In 2008-09, occupied by **Oracle**.
-- After 2018-19, many Java versions had come.
+- After 2016, many Java versions had released.
 - C/C++ directly compiles to machine code and that can not be run on different machines.
 - Java/Python uses bytecode concept. JVM converts machine specific machine code or LLL.
 - **Timeline and History**: Exponentially growth

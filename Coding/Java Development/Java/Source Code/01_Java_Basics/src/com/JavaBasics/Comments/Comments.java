@@ -23,7 +23,6 @@ public class Comments {
         int a = 5;
 
         //printing hello world
-
         System.out.println("Hello World!!!!");
     }
 }

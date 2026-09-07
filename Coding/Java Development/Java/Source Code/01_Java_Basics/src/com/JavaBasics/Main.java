@@ -4,7 +4,8 @@ import java.lang.*; //by default imported
 //Using Intellij IDEA IDE
 
 public class Main{    //Boilerplate code
-    //Fixed signature, must be public and static
+
+    //Fixed signature, must be public and static, entry point
     public static void main(String[] args) {
         //Indentation of code is important
 

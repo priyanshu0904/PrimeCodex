@@ -1,0 +1,23 @@
+package com.DataTypesVariables.Variables;
+
+public class Variables {
+    public static void main(String[] args) {
+        //camelCase Naming convention
+
+        int a; // declaration
+        a = 20; //  initialization or assignment
+        int b = 10; // declaration and initialization
+
+        System.out.println(a);
+        System.out.println(b);
+        b = 55;
+        System.out.println(b);
+        //value overlapped or replaced
+
+        int sum = a + b;
+        System.out.println(sum);
+
+        boolean isLazy = true;
+        System.out.println(isLazy);
+    }
+}

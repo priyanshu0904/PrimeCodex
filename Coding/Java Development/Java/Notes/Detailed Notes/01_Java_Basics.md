@@ -4,7 +4,7 @@
 - LTS versions: Stability over features, Long term support, Reduced frequency for upgrade
 - **Program.java** -> java compiler (javac) -> **Program.class** (bytecode) (Platform independent) -> JVM (java) (of each individual machine) -> Output in 0/1 form, Machine code as per machine specifications.
 - javac -> Compilation to bytecode and checks all errors, responsible for syntax only
-- From Program.java -> Program.class is compilation process. (HLL -> Machine code or LLL), software is Compiler
+- From Program.java -> Program.class is compilation process. (HLL -> Machine code or LLL), software used is Compiler
 - If trying to run without compiling, gives runtime error. Because JVM can't find .class file.
 - From Program.class -> 0/1 form is Interpretation.
 - Ignores Whitespaces
@@ -25,7 +25,7 @@ to bytecode -> javac Main.java //compilation -> Main.class
 to execute bytecode -> java Main //JVM and execution
 then got output in console/terminal
 
-//Source file mode---> java Main.java ---> One-step process (Java 21 and finalize in Java 25)
+//Source file mode---> java Main.java (command) ---> One-step process (Java 21 and finalize in Java 25)
 
 cat Main.java -> to see content inside Main
 ```
@@ -38,16 +38,35 @@ public class Main{
 		System.out.println("Hello PrimeCodex"); //sout
 	}
 }
+
+//main have args argument of String array type
+//javac Main.java
+//java Main 1 2 3 4 -> assigns value to args[0]: 1 and so on
+```
+
+```java
+//No class needed
+void main(String[] args){
+    System.out.println("Hello New Method");
+}
+
+//either this or that, both are valid in Java 21+
+
+public class NewMethod{
+    void main(){
+        System.out.println("Hello New Method");
+    }
+}
 ```
 
 ## Anatomy
-- First Letter of class -> Capital
+- First Letter of class -> Capital(convention)
 - The public class name must be same as file name.
-- At-most one public class in one file and named same as File name.It is not necessary to always have public class.
+- At-most one public class in one file and named same as File name.It is not necessary to always have a public class.
 - Other non-public classes can be created in one file and no need to match with file name. Package-private access by default.
 - Can run the non-public class having main method using Class name.
 ```java
-//File name must be Public
+//File name must be Public.java
 //Can have multiple main method in different classes
 class NonPublic{
   main(); //main 1
@@ -62,9 +81,9 @@ public class Public{
 ```
 
 ## Errors
-1. Compile-time Error: 
-2. Run-time Error:
-3. Logical Error: 
+1. Compile-time Error: Errors due to syntax, compiler detects it
+2. Run-time Error: Error due to some misconception during execution, like / by zero etc. Compiler compiles this easily because no syntax error.
+3. Logical Error: Developer's mistake, like to perform square, he does division, can't caught by compiler or during runtime, using QA detectors
 
 ## File Extensions
 ### 1. .java
@@ -137,7 +156,7 @@ public static void main(String[] args)
   * Docs
   * Used for definition to write in code
   * Can see upon hover */
-Java Docs are applied before any Java method or class only. Document of any Java method or class. You can see upon hover to that class.
+Java Docs are applied before any Java method and class. Document of any Java method or class. You can see upon hover to that class or method.
 
 You can see the documentation of any function by just hovering over it. And to go to the source code just ctrl + click.
 ```
