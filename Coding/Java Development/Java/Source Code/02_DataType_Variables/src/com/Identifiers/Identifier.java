@@ -3,6 +3,7 @@ package com.Identifiers;
 public class Identifier {
     public static void main(String[] args) {
         int employeeId = 55;
+        float employee$Id = 88;
         //int employee#Id = 12;
 
         int totalValue = 100;
@@ -10,8 +11,10 @@ public class Identifier {
 
         int Double = 1000;
         int Runnable = 5000;
+        String String = "Valid";
         System.out.println(Double);
         System.out.println(Runnable);
+        System.out.println(String);
 
         int year2026 = 2026;
         //int 2026year = 2026;

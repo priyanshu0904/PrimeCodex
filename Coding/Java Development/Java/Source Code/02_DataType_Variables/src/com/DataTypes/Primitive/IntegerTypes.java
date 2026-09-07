@@ -1,4 +1,4 @@
-package com.DataTypes;
+package com.DataTypes.Primitive;
 
 public class IntegerTypes {
     public static void main(String[] args) {

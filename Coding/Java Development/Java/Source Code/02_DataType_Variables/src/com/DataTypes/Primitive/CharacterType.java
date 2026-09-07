@@ -1,7 +1,8 @@
-package com.DataTypes;
+package com.DataTypes.Primitive;
 
 public class CharacterType {
     public static void main(String[] args) {
+        //16-bit or 2 Bytes
         char value = 'C'; //single character
         char unicodeValue = '\u0043';
         System.out.println("value is " + value);
