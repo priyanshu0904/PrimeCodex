@@ -1,25 +1,35 @@
 package com.Variables;
 
-import java.io.PrintStream;
-
 public class Store {
     public static void main(String[] args) {
         //Variables
         //Declaration
-        int a;
+        int firstVariable;
         String name;
+        //int firstVariable;
+        //variable name must be unique
 
         //Initialization
-        a = 10;
+        firstVariable = 10;
         name = "Priyanshu";
 
         //Declaration and initialization
-        float b = 20.f;
+        float secondVariable = 20.2f;
         int age = 22;
+        float total = firstVariable + secondVariable;
 
-        System.out.println(a);
-        System.out.println(name);
-        System.out.println(b);
+        //using our variables
+        System.out.println("firstVariable is " + firstVariable); //concatenation
+        System.out.println("secondVariable is " + secondVariable);
+        System.out.println("Total is " + total);
+
+        firstVariable = 15; //overlapping variable
+        System.out.println("firstVariable is " + firstVariable);
+        total = firstVariable + secondVariable;
+        System.out.println("Total is " + total);
+
+        System.out.println("My name is " + name);
+
         //StringTemplate, not available in Java 25 etc
         System.out.printf("Hello, %s. You are %d years old.\n", name, age);
 

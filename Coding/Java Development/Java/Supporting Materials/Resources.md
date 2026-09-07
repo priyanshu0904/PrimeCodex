@@ -11,6 +11,10 @@
 ## Official Github Repo
 - [OpenJDK](https://github.com/openjdk)
 
+## Supporting Websites
+- [Unicode List](https://symbl.cc/en/unicode-table/)
+- [Unicode List 2](https://home.unicode.org/)
+
 ## Tutorial
 - Tutorials Point
 - W3Schools
