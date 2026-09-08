@@ -18,5 +18,14 @@ public class UserInput {
         String str = sc.next(); //to take character or single word
         System.out.println(str);
 
+        //Triple quotes, pre-formatted string
+        //Java will consider it as it is
+        System.out.println("""
+                1. Option 1
+                2. Option 2
+                3. Option 3
+                .....
+                """);
+
     }
 }
