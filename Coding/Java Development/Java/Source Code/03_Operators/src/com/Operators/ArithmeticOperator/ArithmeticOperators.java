@@ -1,4 +1,4 @@
-package com.ArithmeticOperator;
+package com.Operators.ArithmeticOperator;
 
 import java.util.Scanner;
 

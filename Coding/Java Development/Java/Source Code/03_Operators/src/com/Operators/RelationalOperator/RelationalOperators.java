@@ -1,4 +1,4 @@
-package com.RelationalOperator;
+package com.Operators.RelationalOperator;
 
 import java.util.Scanner;
 

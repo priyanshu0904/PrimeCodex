@@ -1,4 +1,4 @@
-package com.OrderOfOperation;
+package com.Operators.OrderOfOperation;
 
 public class OrderOfOperation {
     public static void main(String[] args){

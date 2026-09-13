@@ -1,4 +1,4 @@
-package com.BitwiseOperator;
+package com.Operators.BitwiseOperator;
 
 public class BitwiseOperators {
     public static void main(String[] args) {

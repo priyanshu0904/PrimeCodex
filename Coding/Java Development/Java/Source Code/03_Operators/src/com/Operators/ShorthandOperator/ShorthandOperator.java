@@ -1,4 +1,4 @@
-package com.ShorthandOperator;
+package com.Operators.ShorthandOperator;
 
 import java.util.Scanner;
 

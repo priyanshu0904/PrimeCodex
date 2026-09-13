@@ -1,4 +1,4 @@
-package com.AssignmentOperator;
+package com.Operators.AssignmentOperator;
 
 public class AssignmentOperators {
     public static void main(String[] args) {
