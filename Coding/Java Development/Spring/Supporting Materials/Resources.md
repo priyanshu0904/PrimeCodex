@@ -2,7 +2,6 @@
 - [Library Registry](https://central.sonatype.com/)
 
 ## Official Github Repo
-- [OpenJDK](https://github.com/openjdk)
 
 ## Supporting Websites
 - [Model Mapper](https://modelmapper.org/)
