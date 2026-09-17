@@ -1,6 +1,4 @@
-# Java Resources
-## Official Websites
-- [Dev.java](https://dev.java/)
+# Spring Resources
 - [Oracle](https://www.oracle.com/in/java/)
 - [Java.com](https://www.java.com/en/)
 - [OpenJDK](https://openjdk.org/)
