@@ -1,10 +1,5 @@
 # Spring Resources
-- [Oracle](https://www.oracle.com/in/java/)
-- [Java.com](https://www.java.com/en/)
-- [OpenJDK](https://openjdk.org/)
-- [jdk.java.net](https://jdk.java.net/)
 - [Library Registry](https://central.sonatype.com/)
-
 
 ## Official Github Repo
 - [OpenJDK](https://github.com/openjdk)
