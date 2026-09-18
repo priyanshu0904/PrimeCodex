@@ -1,2 +1,5 @@
 # Internal working of the Spring Boot 
-# Components 
+### Components 
+- IoC Container 
+- Beans
+- Dependency Injection 
