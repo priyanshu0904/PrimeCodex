@@ -2,7 +2,7 @@
 ### Components 
 - IoC Container
 - Beans
-- Dependency Injection 
+- Dependency Injection
 - Components
 - Controller 
 - MVC Pattern
