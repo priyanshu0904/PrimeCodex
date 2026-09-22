@@ -122,6 +122,7 @@ public class Public{
 ```java
 System.out.print();
 System.out.println(); //adds new line after statement
+System.out.println("""Formatted String"""); //prints on console, as it is formatted 
 ```
 
 ## main() Method
