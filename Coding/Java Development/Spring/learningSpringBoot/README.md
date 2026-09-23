@@ -4,3 +4,4 @@
 - Spring Security 
 - Spring AI
 - Spring Data JPA
+- Spring MVC
