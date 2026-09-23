@@ -3,3 +3,4 @@
 - Spring Boot 
 - Spring Security 
 - Spring AI
+- Spring Data JPA
