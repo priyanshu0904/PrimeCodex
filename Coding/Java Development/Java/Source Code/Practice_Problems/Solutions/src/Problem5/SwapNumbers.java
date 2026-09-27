@@ -8,7 +8,7 @@ public class SwapNumbers {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Swapping using temporary variable....");
-        System.out.print("Please enter first number: ");
+        System.out.print("Please enter the first number: ");
         int number1 = sc.nextInt();
         System.out.print("Please enter second number: ");
         int number2 = sc.nextInt();
