@@ -22,7 +22,7 @@ public class SwapNumbers {
 
         //Swapping using arithmetic operations
         System.out.println("Swapping using arithmetic operation....");
-        System.out.print("Please enter first number: ");
+        System.out.print("Please enter the first number: ");
         int num1 = sc.nextInt();
         System.out.print("Please enter second number: ");
         int num2 = sc.nextInt();
