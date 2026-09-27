@@ -10,7 +10,7 @@ public class SwapNumbers {
         System.out.println("Swapping using temporary variable....");
         System.out.print("Please enter the first number: ");
         int number1 = sc.nextInt();
-        System.out.print("Please enter second number: ");
+        System.out.print("Please enter the second number: ");
         int number2 = sc.nextInt();
 
         //Swapping using temporary variable
