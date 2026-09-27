@@ -24,7 +24,7 @@ public class SwapNumbers {
         System.out.println("Swapping using arithmetic operation....");
         System.out.print("Please enter the first number: ");
         int num1 = sc.nextInt();
-        System.out.print("Please enter second number: ");
+        System.out.print("Please enter the second number: ");
         int num2 = sc.nextInt();
 
         //Swapping using Bitwise XOR operation
