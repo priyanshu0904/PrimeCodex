@@ -37,7 +37,7 @@ public class SwapNumbers {
         System.out.println("Swaping using XOR operator.....");
         System.out.print("Please enter the first number: ");
         int firstNumber = sc.nextInt();
-        System.out.print("Please enter second number: ");
+        System.out.print("Please enter the second number: ");
         int secondNumber = sc.nextInt();
 
         System.out.println("Before swapping the numbers are: " + firstNumber + " and " + secondNumber);
