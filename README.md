@@ -12,7 +12,6 @@
 
 <p align="center">
   Every problem solved is another step toward becoming a better problem solver.
-  🚀
 </p>
 
 <p align="center">
