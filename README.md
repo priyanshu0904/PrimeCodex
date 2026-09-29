@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  💻 Turning concepts into code • 🧩 Problems into patterns • ⚡ Ideas into solutions
+  💻 Turning concepts into code • Problems into patterns • ⚡ Ideas into solutions
 </p>
 
 <p align="center">
