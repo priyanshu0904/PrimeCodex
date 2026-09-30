@@ -1,6 +1,6 @@
 # Learning Spring Framework 
 - Spring Framework
-- Spring Boot 
+- Spring Boot
 - Spring Security 
 - Spring AI
 - Spring Data JPA
