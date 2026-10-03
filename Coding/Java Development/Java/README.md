@@ -1,6 +1,6 @@
 # Java CodeBase
 Hey, I am Priyanshu.
-This is my CodeBase named **PrimeCodex.**
+This is my CodeBase under **PrimeCodex.**
 <br>
 Welcome to **PrimeCodex.** Hope you are doing well.
 
