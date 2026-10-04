@@ -1,4 +1,4 @@
-# Java Standa Library Type Hierarchy Reference
+# Java Standar Library Type Hierarchy Reference
 
 ## Master Directory
 
