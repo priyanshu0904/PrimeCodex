@@ -1,4 +1,4 @@
-01. Programming
+01. Programming Fundamentals 
 02. Core Java
 03. OOP
 04. Java Collections
