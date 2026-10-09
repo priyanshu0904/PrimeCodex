@@ -6,3 +6,4 @@
 - Discrete Mathematics 
 - Software Engineering 
 - Database Management System 
+- Computer Networks 
