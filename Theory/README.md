@@ -7,3 +7,4 @@
 - Software Engineering 
 - Database Management System 
 - Computer Networks 
+- Ad-hoc and 
