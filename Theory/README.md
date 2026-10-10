@@ -7,4 +7,4 @@
 - Software Engineering 
 - Database Management System 
 - Computer Networks 
-- Ad-hoc and 
+- Ad-hoc and sensor network 
