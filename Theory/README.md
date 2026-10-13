@@ -8,4 +8,4 @@
 - Database Management System 
 - Computer Networks 
 - Ad-hoc and sensor network 
-- Cryptography and network 
+- Cryptography and network security 
