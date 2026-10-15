@@ -1,4 +1,4 @@
-package com.Collections.CollectionsLibrary.CollectionsClas
+package com.Collections.CollectionsLibrary.CollectionsClass;
 
 import com.Collections.CollectionsLibrary.CollectionInterface.Utility;
 
