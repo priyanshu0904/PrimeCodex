@@ -5,4 +5,4 @@
 - Javascript 
 - C#
 - PHP
-- Ruby
+- Rub
