@@ -4,5 +4,5 @@
 - Python 
 - Javascript 
 - C#
-- PHP got
+- PHP has
 - Ruby on Rails 
