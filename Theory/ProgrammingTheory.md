@@ -4,5 +4,5 @@
 - Python 
 - Javascript 
 - C#
-- PHP has
+- PHP has vulnerabilities 
 - Ruby on Rails 
