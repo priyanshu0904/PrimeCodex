@@ -6,3 +6,4 @@
 - C#
 - PHP has vulnerabilities 
 - Ruby on Rails
+-Gen AI
