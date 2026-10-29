@@ -11,6 +11,8 @@ public class TypeCasting {
         //conversion or implicit conversion
         double d = 15;
         System.out.println(d);
+        double db = 16.6f;
+        System.out.println(db);
 
         //type promotion
         byte a1 = 10;
