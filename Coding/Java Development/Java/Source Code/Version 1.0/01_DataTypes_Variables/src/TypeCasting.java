@@ -8,7 +8,8 @@ public class TypeCasting {
         int t = (int) f;
         System.out.println(t);
 
-        
+        short sh = (short) 188789;
+        System.out.println(sh);
 
         //conversion or implicit conversion
         double d = 15;
