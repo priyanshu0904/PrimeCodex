@@ -8,6 +8,8 @@ public class TypeCasting {
         int t = (int) f;
         System.out.println(t);
 
+        
+
         //conversion or implicit conversion
         double d = 15;
         System.out.println(d);
