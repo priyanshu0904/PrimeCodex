@@ -2,7 +2,7 @@
 Hey, I am Priyanshu.
 This is my CodeBase of Java under **PrimeCodex.**
 <br>
-Welcome to **PrimeCodex.** Hope you are doing well.
+Welcome to **PrimeCodex.** Hope you are doing well. Enjoy the Java journey.
 
 ## Github Commands to be used Frequently
 ```shell
